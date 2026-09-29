@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="從校園既有的短天溝出發，看懂嘉北國小的雨水收集系統。"><title>雨水去哪裡了？｜嘉北國小雨水觀察站</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="notebook.css"><link rel="stylesheet" href="axonometric.css"><link rel="stylesheet" href="chapters.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"><link rel="stylesheet" href="direction-b2.css"><script src="chapters.js" defer></script><script src="simulation.js" defer></script><script src="diagram.js" defer></script><script src="notebook.js" defer></script><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23295e51' d='M16 2C9 12 5 17 5 22a11 11 0 0 0 22 0C27 17 23 12 16 2'/%3E%3C/svg%3E"></head><body>
+<header class="site-header"><div class="header-inner"><a class="brand" href="#home">嘉北國小<span>雨水觀察站</span></a><nav aria-label="主要導覽"><a href="#story"><span class="tech-code">01</span>天溝的故事</a><a href="#equipment"><span class="tech-code">02</span>構造探索</a><a href="#lab"><span class="tech-code">03</span>操作雨水</a><a href="#engineering"><span class="tech-code">04</span>設計與再利用</a><a href="#reuse"><span class="tech-code">05</span>雨水再利用</a><a href="#care"><span class="tech-code">06</span>使用與維護</a><a href="manual.html"><span class="tech-code">07</span>操作手冊</a></nav></div></header><main>
+<section id="home" class="hero wrap"><div><p class="eyebrow">校園觀察筆記 ／ 嘉北國小</p><h1>雨水<span class="hero-accent">去哪裡了？</span></h1><p class="lead">我們把原本要排掉的雨水，<br>留在校園裡。</p><p>先看看已經有什麼，再想想可以增加什麼。從一小段天溝，認識這套真實的雨水系統。</p><div class="actions"><a class="button primary" href="#story">從校園故事開始 ↗</a><a class="button" href="#lab">讓雨下一次</a></div></div><figure class="paper"><img src="photos/system.jpeg" width="1536" height="1152" alt="嘉北國小完成後的雨水系統，黑色水桶位於沉澱管左側"><figcaption><span class="tech-code figure-code">FIG. 01</span>從校園裡的一個角落，開始觀察。<span>完成後的雨水收集系統</span></figcaption></figure></section>
+<section id="story" class="wrap"><p class="eyebrow"><span class="tech-code">CHAPTER 01</span><span class="chapter-original-code">01 ／ </span>設計，從觀察開始</p><div class="section-head"><h2>它原本，<br>是為了讓孩子走過去。</h2><p>這段天溝早在雨水收集系統之前就存在。先看懂屋頂、樓梯和水的關係，再看後來增加了什麼。</p></div><div class="story-grid"><div><figure class="paper"><div class="story-stage"><img id="story-image" src="photos/courtyard-before.png" width="1536" height="1152" alt="施工前完整場域，右下樓梯、左右交接的遮雨屋頂、中央短天溝及右方排水管"><svg id="story-overlay" viewBox="0 0 1536 1152" aria-hidden="true"><path id="story-highlight"/><path id="story-water" d="M1050 322L1080 363V410Q1080 425 1100 429L1267 453V472L1334 527L1518 548"/></svg></div><figcaption class="story-caption"><span class="tech-code figure-code">FIG. 02</span><span id="story-caption">先看全景，找到樓梯與走道。</span></figcaption></figure><div class="story-controls"><button id="story-prev">← 上一步</button><span id="story-count">1 / 6</span><button id="story-next" class="primary">下一步 →</button></div><div class="choices" id="story-steps" aria-label="故事步驟"></div></div><aside class="story-note"><p class="eyebrow" id="story-kicker"></p><h3 id="story-title" aria-live="polite"></h3><p id="story-body"></p><p class="pencil" id="story-question"></p><details><summary>看原本破損的接頭</summary><img src="photos/broken-joint.jpeg" width="1536" height="1152" alt="施工前橫管接入原排水直管處的破損缺口"><p>後來接入雨水系統時，也一併修復這個漏水問題。</p></details></aside></div></section>
+<section id="equipment" class="review-section"><div class="wrap"><p class="eyebrow"><span class="tech-code">CHAPTER 02</span><span class="chapter-original-code">02 ／ </span>工程師的觀察筆記</p><div class="section-head"><h2>每一段管路，<br>都有它的理由。</h2><p>移到設備上看看名稱；點一下，讀它的設計理由。觸控螢幕可直接點選，也可以用鍵盤 Tab 選取。</p></div><div class="equipment-grid"><div class="drawing paper" id="explore-drawing"></div><aside class="equipment-note"><p class="eyebrow">構造筆記</p><h3 id="part-title" aria-live="polite">從圖上選一個構造</h3><h4>這是什麼？</h4><p id="part-what">試著找出右側長長的沉澱管，或水桶上方特別抬高的管路。</p><h4>為什麼這樣設計？</h4><p id="part-why"></p></aside></div><details class="review-notes"><summary>對照完成後的實體照片</summary><img class="reference-photo" src="photos/system.jpeg" width="1536" height="1152" alt="手繪圖所依據的完成照"><p>進水管先向右繞，避開監視器，再沿著原有管線折返，接到沉澱管。這樣既不擋住監視器，也讓管線比較整齊。</p></details></div></section>
+<section id="lab" class="wrap"><p class="eyebrow"><span class="tech-code">CHAPTER 03</span><span class="chapter-original-code">03 ／ </span>同一套系統，換你操作</p><div class="section-head"><h2>讓雨下來，<br>再決定要不要留下。</h2><p>直接操作圖上的紅色排水閥與三個水龍頭。</p></div><div class="exhibit"><div class="lab-grid"><div class="lab-visual"><div class="drawing paper lab-drawing"><div id="flow-drawing"></div><button id="valveToggle" class="valve-target" aria-label="排水閥目前開啟，點擊關閉" aria-pressed="false"><span class="valve-lever"></span><span class="valve-label" id="valve-label">排水閥：開</span></button></div><div class="under-drawing"><span>藍色＝水流與蓄水；虛線＝被遮擋的管段。</span></div></div><aside class="operation-guide"><div class="exhibit-toolbar"><div class="state-chips"><span id="rainState"></span><span id="valveState"></span></div><div class="exhibit-controls"><div class="weather"><button id="rainToggle" class="primary" aria-pressed="false">開始下雨</button></div><button id="reset">重新開始</button></div></div><div class="state-narrative"><h3 id="stateTitle" aria-live="polite"></h3><p id="stateText"></p></div><p class="rule">平常開著，需要收水才關起來。</p></aside></div><aside class="readout"><div class="flush-note"><strong>前 5–10 分鐘：先沖洗</strong><progress id="flushMeter" max="8" value="0" aria-label="加速沖洗教學進度"></progress><p id="flushText"></p></div><div class="water-levels"><div class="meter"><label for="columnMeter">沉澱管至高位出口 <strong id="columnPercent"></strong></label><progress id="columnMeter" max="1" value="0"></progress></div><div class="meter"><label for="tankMeter">200 L 桶示意水位 <strong id="tankPercent"></strong></label><progress id="tankMeter" max="1" value="0"></progress></div></div><p id="tapStatus" class="tap-status" aria-live="polite">三個水龍頭都關著；有水時可直接點圖上的龍頭取用。</p><p class="small">動畫為教學示意，不代表實際集水或用水速度。</p></aside><details><summary>關於水流示意</summary><p>停止下雨不會清空桶內已收的水；按「重新開始」才會重設。紅色排水閥控制沉澱管排水，水龍頭才是取用桶內雨水的開關。動畫簡化了停雨後管內剩餘水的流動，實際情況可能不同。</p></details></div></section>
+<div id="later" class="chapter-bridge wrap"><p class="eyebrow">水收下來了，故事還沒結束。</p><p class="lead">剛才操作的是修改後的系統。<br>它是怎麼一步步變成現在這個樣子的？</p><nav aria-label="接下來的學習"><a href="#engineering">看設計怎麼修改 ↓</a><a href="#reuse">看雨水能做什麼 ↓</a><a href="#care">看使用與照顧方式 ↓</a></nav></div>
+<section id="engineering" class="chapter-tint"><div class="wrap"><p class="eyebrow"><span class="tech-code">CHAPTER 04</span><span class="chapter-original-code">04 ／ </span>設計也需要試一試</p><div class="section-head"><h2>第一次接好，<br>水卻沒有照計畫走。</h2><p>我們希望先把前段雨水排掉，再開始收水。接好管路後，還要真的放水測試，看看它有沒有做到。</p></div>
+<div class="engineering-layout before-after"><div class="engineering-notes"><p class="eyebrow">從測試中找到原因</p><div class="chapter-choices" role="group" aria-label="設計修正故事"><button data-engineering="problem" aria-pressed="true">發現問題</button><button data-engineering="change" aria-pressed="false">修改接法</button><button data-engineering="test" aria-pressed="false">再測一次</button></div><div id="engineering-panel" class="chapter-panel" aria-live="polite"><h3 id="engineering-title">還沒準備收水，水就往桶子走。</h3><p id="engineering-body">原本較低的進桶支管，讓沿著管壁流下的水有機會直接進入水桶。這會影響「先排掉前段雨水」的安排。</p><p id="engineering-notice" class="pencil">光看接好了還不夠，要看水實際怎麼走。</p></div></div><div class="chapter-reflection after-panel"><h3>修改之後，再回去看水流。</h3><p>進桶支管抬高後，關閉底部排水閥，水位才會逐漸升到高點，再進入水桶。現在圖上的那個高點，就是一次測試與修改留下的結果。</p><a class="button" href="#lab">回到動畫，觀察高點 ↗</a></div></div>
+<ol class="process-strip" aria-label="工程設計過程"><li>觀察現場</li><li>設計與組裝</li><li>放水測試</li><li>找出問題</li><li>修改再測</li></ol>
+<div class="project-record-grid">
+<h3 class="project-record-heading project-record-heading--engineering">工程改良</h3>
+<h3 class="project-record-heading project-record-heading--students">學生參與</h3>
+<figure class="project-record-card project-record-card--before">
+<div class="project-record-image">
+<img src="photos/original-tee.png" width="1477" height="1108" alt="修改前施工全景，保留梯子與水桶，藍線指向從主要管線向左接出再向下進桶的支管。">
+<svg viewBox="0 0 1477 1108" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none">
+<path d="M335 420H445L541 507" fill="none" stroke="#fff" stroke-width="7"/>
+<path d="M335 420H445L541 507" fill="none" stroke="#0284C7" stroke-width="3"/>
+<circle cx="541" cy="507" r="6" fill="#0284C7" stroke="#fff" stroke-width="2"/>
+<circle cx="335" cy="420" r="25" fill="#fff" stroke="#0284C7" stroke-width="3"/>
+<text x="335" y="420" dominant-baseline="central" text-anchor="middle" font-family="Space Mono,monospace" font-size="23" fill="#0F172A">01</text>
+</svg>
+</div>
+<figcaption><span class="tech-code">01</span><h3>修改前｜較低的進桶支管</h3><p>初期雨水可能在尚未完成沖洗前就進入水桶。</p></figcaption>
+</figure>
+<figure class="project-record-card project-record-card--observe">
+<div class="project-record-image project-record-image--student project-record-image--observe">
+<img src="photos/student-participation-illustration.png" alt="手繪插圖：學生在完成後觀察雨水回收系統" loading="lazy" width="1536" height="1024">
+</div>
+<figcaption><span class="tech-code">02</span><h3>完成實作後｜現場觀察</h3><p>學生回到完成後的系統旁，觀察管線與設備如何連接。</p></figcaption>
+</figure>
+<figure class="project-record-card project-record-card--after">
+<div class="project-record-image project-record-image--after">
+<img src="photos/maintenance-system.png" width="1477" height="1108" alt="修改後的系統：提高的進桶支管與高點，以及下方水桶和沉澱管的相對位置。" loading="lazy">
+</div>
+<figcaption><span class="tech-code">02</span><h3>修改後｜提高進桶位置</h3><p>進桶支管抬高後，關閉底部排水閥，水位才會逐漸升到高點，再進入水桶。</p></figcaption>
+</figure>
+<figure class="project-record-card project-record-card--assemble">
+<div class="project-record-image project-record-image--student project-record-image--assemble">
+<img src="photos/student-participation-illustration.png" alt="手繪插圖：學生分組組裝 PVC 管件" loading="lazy" width="1536" height="1024">
+</div>
+<figcaption><span class="tech-code">01</span><h3>分組組裝 PVC 管件</h3><p>學生分組組裝 PVC 管件，實際參與系統建置。</p></figcaption>
+</figure>
+</div></div></section>
+<section id="reuse" class="wrap"><p class="eyebrow"><span class="tech-code">CHAPTER 05</span><span class="chapter-original-code">05 ／ </span>留下的水，回到校園生活</p><div class="section-head"><h2>打開水龍頭之後，<br>雨水還能做什麼？</h2><p>三個龍頭取用的是同一桶儲存的雨水。把它用在適合的地方，就能少用一部分原本需要的自來水。</p></div>
+<div class="use-grid"><article>
+<div style="min-height:240px;padding:24px;background:var(--bg-surface-subtle);border:1px solid var(--border-subtle);border-radius:var(--radius-card);display:flex;flex-direction:column;justify-content:center;gap:16px">
+<svg viewBox="0 0 440 150" role="img" aria-label="桶內收集的雨水，經水龍頭取用後澆灌植物" style="display:block;width:100%;height:auto;max-height:160px">
+<g fill="none" stroke="#0F172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="24" y="25" width="80" height="108" rx="6"/><path d="M35 25v-9h58v9M24 48h80M104 104h22v12h-10M110 93h18M119 93v11"/>
+<path d="M303 95h77l-12 38h-53zM341 94V44M341 73c-25 0-34-15-34-29 23 0 34 12 34 29zM341 61c25 0 34-15 34-29-23 0-34 12-34 29z"/>
+</g><g fill="none" stroke="#0284C7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M36 79h56M36 88h56M121 126v8M164 78h91m-11-10 11 10-11 10M289 34l-10 12M301 40l-8 15M313 44l-5 15"/>
+</g></svg>
+<p style="margin:0;color:var(--text-primary);font-size:18px;text-align:center">取用收集的雨水 → 澆灌校園植物</p>
+</div><h3>照顧植物</h3><p>需要澆水時，可以取用桶內收集的雨水。用多少取多少，使用後關好水龍頭。</p></article><article>
+<div style="min-height:240px;padding:24px;background:var(--bg-surface-subtle);border:1px solid var(--border-subtle);border-radius:var(--radius-card);display:flex;flex-direction:column;justify-content:center;gap:16px">
+<svg viewBox="0 0 440 150" role="img" aria-label="桶內收集的雨水，經水龍頭取用後用於水桶與清潔工具" style="display:block;width:100%;height:auto;max-height:160px">
+<g fill="none" stroke="#0F172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="24" y="25" width="80" height="108" rx="6"/><path d="M35 25v-9h58v9M24 48h80M104 104h22v12h-10M110 93h18M119 93v11"/>
+<path d="M282 69h70l-8 60h-54zM293 69V56a24 24 0 0 1 48 0v13M388 25l-21 82M356 107h29l9 22h-47zM357 129l5-13M368 129l2-13M380 129l-2-13M272 138h132"/>
+</g><g fill="none" stroke="#0284C7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M36 79h56M36 88h56M121 126v8M164 78h91m-11-10 11 10-11 10M293 88h48M294 96h46"/>
+</g></svg>
+<p style="margin:0;color:var(--text-primary);font-size:18px;text-align:center">取用收集的雨水 → 用於適合的校園環境清潔</p>
+</div><h3>清洗合適的地方</h3><p>依老師安排，用在適合的環境清洗工作。這套系統目前沒有設置飲用水處理設備，因此收集的雨水主要用於澆灌與清潔。若要作為飲用水，還需要經過適當的淨水處理，並確認水質符合飲用水要求。</p></article></div>
+<div class="weather-notebook"><div><p class="eyebrow">同一套設備，不同的天氣</p><h3>如果天氣變了呢？</h3><div class="chapter-choices" role="group" aria-label="選擇天氣情境"><button data-weather="rain" aria-pressed="true">下雨的時候</button><button data-weather="heavy" aria-pressed="false">雨下得很大</button><button data-weather="dry" aria-pressed="false">一段時間沒下雨</button></div></div><div class="chapter-panel" aria-live="polite"><p class="weather-label" id="weather-label">收下一部分雨水</p><h3 id="weather-title">先沖洗，再把水留下。</h3><p id="weather-body">先讓前段雨水排走，需要收水時才關閉排水閥。留下的水，可以在之後有需要時取用。</p><p class="weather-limit" id="weather-limit">能收多少，和降雨情況、原有水位及操作方式有關。</p></div></div>
+<div class="chapter-reflection resilience"><h3>多一份準備，就是增加一點韌性。</h3><p>「氣候韌性」可以先理解成：面對天氣變化，多一些準備和調整的方法。有雨時留下部分雨水，需要時再取用，是校園能做的一小步。</p><p>雨水是補充水源。200 L 的容量有限，不能供應全校所有用水，也不能保證久不下雨時一直有水。仍需配合學校的用水安排，節約用水並照顧設備。</p></div><a class="chapter-next" href="#care">知道怎麼用，也要知道怎麼照顧它 →</a></section>
+<section id="care" class="chapter-tint"><div class="wrap"><p class="eyebrow"><span class="tech-code">CHAPTER 06</span><span class="chapter-original-code">06 ／ </span>讓設備繼續好好工作</p><div class="section-head"><h2>收水、用水，<br>也一起照顧這套系統。</h2><p>紅色排水閥負責沉澱管排水，三個水龍頭負責取用桶內的水。它們的工作不同，使用後要分別確認。</p></div>
+<div class="care-layout"><div class="care-steps"><details open><summary>平常與剛下雨：排水閥保持開啟</summary><p>平常讓底部紅色排水閥開著。剛下雨時先排掉前 5–10 分鐘的雨水，讓屋頂先沖洗。網站中的等待已加速，現場不能照動畫秒數操作。</p></details><details><summary>準備收水：沖洗後才關排水閥</summary><p>依老師的安排，確認初期沖洗後再關閉紅色排水閥，讓沉澱管蓄水、雨水進桶。不需要繼續收水時，再將排水閥打開。</p></details><details><summary>取用雨水：需要才開，用完關好</summary><p>依用途打開需要的水龍頭，用完逐一關好。沒有水時先關回龍頭，告訴老師；不要自行拆管或轉動其他接頭。目前收集的雨水未經飲用水處理，請用於澆灌與清潔。</p></details><details><summary>發現異常：先告訴老師</summary><p>看到漏水、天溝或排水口有落葉堵住、防蟲網破損，先告訴老師或管理人員。清理高處、拆接管線與搬動水桶，由成人安排處理。</p></details></div><aside aria-label="設備位置與可維護構造">
+<figure style="margin:0;border:1px solid var(--border-subtle);border-radius:var(--radius-card);overflow:hidden;background:#fff">
+<div style="position:relative">
+<img src="photos/maintenance-system.png" width="1477" height="1108" alt="完成後的雨水回收設備，完整呈現桶頂通氣口、右側進桶直管由令，以及左側通往三個龍頭的出水管線。" style="display:block;width:100%;height:auto">
+<svg viewBox="0 0 1477 1108" aria-hidden="true" style="position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none">
+<g fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M470 590H550L615 686M1050 590H900L800 612M330 982H430L513 871"/></g>
+<g fill="none" stroke="#0284C7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M470 590H550L615 686M1050 590H900L800 612M330 982H430L513 871"/></g>
+<g fill="#0284C7" stroke="#fff" stroke-width="2"><circle cx="615" cy="686" r="5"/><circle cx="800" cy="612" r="5"/><circle cx="513" cy="871" r="5"/></g>
+<g fill="#fff" stroke="#0284C7" stroke-width="3"><circle cx="470" cy="590" r="27"/><circle cx="1050" cy="590" r="27"/><circle cx="330" cy="982" r="27"/></g>
+<g fill="#0F172A" font-family="Space Mono,monospace" font-size="23" font-weight="700" text-anchor="middle" dominant-baseline="central"><text x="470" y="590">01</text><text x="1050" y="590">02</text><text x="330" y="982">03</text></g>
+</svg>
+</div>
+<figcaption>完成後的雨水回收系統：通氣／防蟲口、進水端由令與出水端由令位置。</figcaption>
+</figure>
+<dl style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px;margin:24px 0 0">
+<div><dt style="font-weight:700;color:var(--text-primary)"><span class="tech-code" style="color:var(--primary-hover)">01</span>｜通氣／防蟲口</dt><dd style="margin:8px 0 0">讓水桶內外空氣流通，並透過防蟲設計降低昆蟲進入。</dd></div>
+<div><dt style="font-weight:700;color:var(--text-primary)"><span class="tech-code" style="color:var(--primary-hover)">02</span>｜進水端由令</dt><dd style="margin:8px 0 0">需要清潔或維護時，可從這裡拆開進水端管線，不必切斷 PVC 管。</dd></div>
+<div><dt style="font-weight:700;color:var(--text-primary)"><span class="tech-code" style="color:var(--primary-hover)">03</span>｜出水端由令</dt><dd style="margin:8px 0 0">需要清潔或維護水桶時，可從這裡拆開出水端管線，讓水桶與三個水龍頭的管線分離，不必切斷 PVC 管。</dd></div>
+</dl>
+</aside></div>
+<div class="maintenance-note"><h3>給老師與設備管理者</h3><p>維護內容包括觀察接頭是否漏水、檢查集排水處是否堵塞、防蟲網是否完整，以及安排儲水桶清潔。由令是方便拆開管線的接頭；拆桶清洗需先放空桶內的水，再由成人處理。</p></div>
+<div class="learning-close"><p class="eyebrow">從一小段天溝開始</p><h2>先看懂環境，<br>再讓既有的東西多一個功能。</h2><p>修好原本的漏水，留下部分雨水，測試並修改接法，再把水用在校園裡。這套設備的故事，也是一個觀察、設計與持續照顧的過程。</p><div class="actions"><a class="button" href="#story">再看一次設計起點</a><a class="button primary" href="#lab">回到雨水操作</a></div></div></div></section>
+</main><footer class="site-footer"><div class="wrap">嘉北國小雨水觀察站</div></footer></body></html>

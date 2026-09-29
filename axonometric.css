@@ -1,0 +1,34 @@
+/* Fixed oblique engineering view: quiet site lines, faceted tank, rounded pipe bodies. */
+.site-context{stroke:#9eac9b;stroke-width:1.6;opacity:.14}
+.gutter{opacity:.88}
+.pipe-shadow,.pipe-light{fill:none;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.pipe-shadow{stroke:#516155;opacity:.15;transform:translate(3px,4px)}
+.pipe-edge{stroke:#54675d}
+.pipe-face{stroke:#bac8bd}
+.pipe-light{stroke:#eff0d9;opacity:.75}
+.fitting-line{fill:none;stroke:#647765;stroke-width:2}
+.silhouette{fill:#303d35;stroke:#26382f;stroke-width:3}
+.barrel-top{fill:#6d7868;stroke:#2a3c32;stroke-width:3;stroke-linejoin:round}
+.barrel-side{fill:#28372f;stroke:#25372d;stroke-width:3;stroke-linejoin:round}
+.barrel-front{stroke:#26392f;stroke-width:3;stroke-linejoin:round}
+.barrel-seam{fill:none;stroke:#a2ad92;stroke-width:2;opacity:.63}
+.barrel-panel{fill:#53615444;stroke:#a8b297;stroke-width:2}
+.tank-lid{fill:#303c33;stroke:#182d26;stroke-width:3}
+.tank-lid-top{fill:#607160;stroke:#a2aa94;stroke-width:2}
+.device.lit .barrel-front{fill:var(--part-color)}
+.device.lit .barrel-side{fill:#365747}
+.device.lit .barrel-top{fill:#9aab87}
+.device.lit .pipe-light{stroke:#fffbe5}
+.faucet{cursor:pointer;outline:none}
+.tap{stroke:#819a8d;stroke-width:8}
+.tap-spout,.tap-stem,.tap-handle{fill:none;stroke:#526f63;stroke-linecap:round;stroke-linejoin:round}
+.tap-spout{stroke-width:5}.tap-stem{stroke-width:5}.tap-handle{stroke-width:5;transform-box:fill-box;transform-origin:center;transition:transform .2s}
+.tap-mouth{fill:#678177;stroke:#355349;stroke-width:1.5}
+.faucet:hover .tap,.faucet:hover .tap-spout,.faucet:hover .tap-handle,.faucet:focus-visible .tap,.faucet:focus-visible .tap-spout,.faucet:focus-visible .tap-handle{stroke:#2f9a9d;filter:drop-shadow(0 0 3px #79c8c0)}
+.faucet:focus-visible .tap-hit{stroke:none}
+.faucet.open .tap-handle{transform:rotate(45deg)}
+.tap-water{visibility:hidden;fill:none;stroke:#218fb3;stroke-width:5;stroke-linecap:round;stroke-dasharray:7 11;animation:tap-flow .45s linear infinite;pointer-events:none}
+.tap-water.visible{visibility:visible}
+.tap-status{border-left:3px solid #83a9a1;padding:8px 12px;background:#edf5f0;color:#28594d}
+@keyframes tap-flow{to{stroke-dashoffset:-18}}
+@media(prefers-reduced-motion:reduce){.tap-water{animation:none;stroke-dasharray:none}.tap-handle{transition:none}}
