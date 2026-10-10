@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>社區水韌性模擬器 · Prototype 0</title><meta name="description" content="配置土地與設施，觀察降雨、入滲、蓄水與淹水。"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b2636'/%3E%3Cpath d='M16 4Q3 19 9 25Q16 32 23 25Q29 19 16 4' fill='%233fd8c0'/%3E%3C/svg%3E"><style>:root{font-family:"Microsoft JhengHei","PingFang TC",system-ui,sans-serif;color:#183546;background:#edf3f7;font-size:16px;--ink:#0b2636;--teal:#087c76}*{box-sizing:border-box}body{margin:0}header{padding:24px max(24px,calc((100vw - 1380px)/2));background:var(--ink);color:white;display:flex;align-items:center;justify-content:space-between;gap:16px}.eyebrow{color:#5bddcc;font-size:12px;letter-spacing:2px}h1{font-size:26px;margin:7px 0 0;font-weight:650}h2{font-size:17px;margin:0 0 14px}.badge{font-size:14px;padding:8px 12px;border:1px solid #456573;border-radius:6px;color:#b9d4e2}main{max-width:1380px;margin:auto;padding:22px 24px}button,select{font:inherit;font-size:14px;min-height:42px;border-radius:7px;border:1px solid #c2d1d9;background:white;color:var(--ink);padding:9px 12px}button{cursor:pointer;touch-action:manipulation}button:hover{border-color:var(--teal)}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #f1a735;outline-offset:2px}button.primary{background:var(--teal);border-color:var(--teal);color:white;font-weight:700}.toolbar{display:flex;gap:10px;align-items:end;flex-wrap:wrap}.toolbar label{display:grid;gap:6px;font-size:14px}.toolbar select{min-width:100px}.note{color:#56707f;font-size:14px;line-height:1.65}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}.stats>div{background:white;border:1px solid #d4e0e7;border-radius:9px;padding:16px}.stats span,.stats small{display:block;color:#557080;font-size:14px}.stats strong{display:block;font-size:30px;line-height:1.5;font-weight:650}.stats em{font-size:15px;font-style:normal;margin-left:4px;color:#5d7685}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px}.map-panel,.build-panel,.detail-panel{background:white;border:1px solid #d4e0e7;border-radius:10px;padding:20px}.panel-title{display:flex;justify-content:space-between;align-items:center;gap:10px}.toggle{font-size:14px;display:flex;align-items:center;gap:6px}.map-wrap{position:relative;padding-right:28px}#map{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:3px;background:#d2e2e7;border:6px solid #d2e2e7;border-radius:9px}.river-caption{position:absolute;right:0;top:20%;writing-mode:vertical-rl;font-size:14px;color:#35708c;letter-spacing:3px}.tile{position:relative;aspect-ratio:1.12;min-width:0;min-height:0;border:0;border-radius:4px;padding:0;overflow:hidden;background:var(--terrain);isolation:isolate;transition:background .2s}.tile .facility-icon{position:absolute;z-index:3;top:16%;left:0;right:0;font-size:clamp(16px,2.6vw,30px);line-height:1.2;filter:drop-shadow(0 1px 1px #28424a30)}.tile .elevation{position:absolute;left:3px;top:2px;font-size:10px;color:#203928aa;z-index:4}.tile .water{position:absolute;bottom:0;left:0;right:0;height:var(--water-height);background:#148cdf;opacity:var(--water-opacity);z-index:2;transition:height .35s,opacity .35s}.tile .storage{position:absolute;bottom:6px;left:7px;right:7px;height:var(--storage-height);background:#2bade1aa;border-top:2px solid #b5efff;z-index:1;transition:height .35s}.tile .storage-label{position:absolute;bottom:7px;left:0;right:0;text-align:center;font-size:11px;font-weight:700;color:#0a314d;z-index:5;background:#ffffff99}.tile .soil{position:absolute;bottom:0;left:0;right:0;height:4px;background:var(--soil-color);z-index:5}.tile .flow{position:absolute;right:3px;top:40%;z-index:6;font-size:17px;color:#28576c;opacity:.30}.tile.flowing .flow{color:#005dae;opacity:.95;animation:flow .8s linear infinite}.tile.river{background:#69bfda}.tile.river .water{opacity:.7;background:#005eb8}.tile.river .flow{right:40%;color:#fff}.tile.road{background:repeating-linear-gradient(0deg,#788894 0 45%,#d8dee2 45% 49%,#788894 49% 100%)}.tile.lowland{background-image:repeating-linear-gradient(135deg,transparent 0 7px,#315c4733 7px 9px)}.tile.ponded{box-shadow:inset 0 0 0 2px #008fcd}.tile.flooded{box-shadow:inset 0 0 0 3px #d85244}.tile.selected{outline:3px solid #f2a52d;outline-offset:-3px;z-index:7}.tile .alert{position:absolute;right:3px;top:2px;z-index:8;font-size:12px;color:#fff;background:#be3428;border-radius:3px;padding:0 3px}.hide-flows .flow{display:none}.legend{display:flex;flex-wrap:wrap;gap:15px;font-size:14px;margin-top:16px}.legend span{display:flex;align-items:center;gap:6px}.legend i{width:13px;height:13px;border-radius:3px;background:#b4c992}.legend .ponding{background:#59bfee}.legend .flooding{background:#d85244}.legend .low{background:repeating-linear-gradient(135deg,#bbcd91 0 3px,#768f59 3px 5px)}.map-hint{color:#56707f;font-size:14px;line-height:1.6}.river-strip{display:flex;align-items:center;gap:12px;font-size:14px}.river-strip>span{white-space:nowrap}#river-levels{display:flex;gap:4px;height:42px;flex:1;align-items:end}.river-meter{background:#d4eaf3;width:10%;height:100%;position:relative;border-radius:3px;overflow:hidden}.river-meter i{position:absolute;bottom:0;left:0;right:0;background:#2194cf;transition:height .3s}.river-meter.over i{background:#d85244}aside{display:flex;flex-direction:column;gap:16px}#facilities{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.facility-btn{text-align:left;line-height:1.5;padding:8px;font-size:14px}.facility-btn.active,#inspect-mode.active{border:2px solid var(--teal);background:#e4f7f2;padding:7px}.facility-btn span{display:block;font-size:24px}#inspect-mode{width:100%}.detail-panel dl{margin:0}.detail-panel dl>div{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid #e6edf1;padding:9px 0;font-size:14px}.detail-panel dd{margin:0;font-weight:650;text-align:right}.meter{height:8px;background:#e1eaf0;border-radius:4px;overflow:hidden;margin:8px 0}.meter i{display:block;height:100%;background:#158fcc;transition:width .3s}details{margin-top:20px;background:#e2edf3;border-radius:8px;padding:14px 18px;font-size:14px;line-height:1.8}summary{cursor:pointer;font-weight:700}footer{text-align:center;padding:20px;color:#65808d;font-size:14px}@keyframes flow{0%{transform:translate(-2px,-1px)}100%{transform:translate(2px,1px)}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}@media(max-width:1000px){.workspace{grid-template-columns:minmax(0,1fr) 255px}.map-panel{padding:12px}.tile .elevation{display:none}.tile .storage-label{font-size:10px}}@media(max-width:760px){header{padding:18px 16px}.badge{display:none}h1{font-size:22px}main{padding:16px 12px}.workspace{grid-template-columns:1fr}.stats{gap:8px;grid-template-columns:repeat(2,1fr)}.stats>div{padding:12px}.stats strong{font-size:26px}aside{display:grid;grid-template-columns:1fr 1fr;gap:10px}.build-panel,.detail-panel{padding:12px}.map-wrap{padding-right:22px}.tile{aspect-ratio:.95}.tile .facility-icon{font-size:clamp(13px,4.5vw,27px)}.tile .flow{font-size:14px;right:1px}.tile .storage{left:2px;right:2px}.tile .storage-label{bottom:5px;font-size:9px}.river-strip{gap:8px}.toolbar{gap:8px}.toolbar label{flex:1}.toolbar select{width:100%}.toolbar button{flex:1;white-space:nowrap}}@media(max-width:430px){aside{grid-template-columns:1fr}.tile .flow{font-size:11px}.tile .storage-label{font-size:8px}#facilities{grid-template-columns:repeat(3,1fr)}.legend{gap:10px}#map{border-width:3px;gap:2px}.stats small{font-size:12px}.tile .alert{font-size:9px}}
+</style></head>
+<body><header><div><span class="eyebrow">WATER LAB / PROTOTYPE 0</span><h1>社區水韌性模擬器</h1></div><span class="badge">規則型教學模擬</span></header>
+<main><section class="toolbar" aria-label="測試控制"><label>測試城市<select id="scenario"></select></label><label>降雨條件<select id="weather"></select></label><label>速度<select id="speed"><option value="1">1 倍</option><option value="2">2 倍</option><option value="4">4 倍</option></select></label><button id="play" class="primary">開始模擬</button><button id="step">前進一步</button><button id="water-reset">重跑此配置</button><button id="map-reset">清空地圖</button></section>
+<p id="scenario-note" class="note"></p>
+<section class="stats" aria-label="目前水況"><div><span>模擬時間</span><strong id="clock">0:00</strong><small id="weather-now">尚未降雨</small></div><div><span>受影響土地</span><strong id="affected">0 <em>格</em></strong><small id="affected-detail">積水 0 · 淹水 0</small></div><div><span>綠地土壤濕度</span><strong id="wet">0<em>%</em></strong><small>越濕，入滲能力越低</small></div><div><span>設施蓄水</span><strong id="stored">0<em>%</em></strong><small id="stored-detail">0 / 0 相對水量</small></div></section>
+<div class="workspace"><section class="map-panel"><div class="panel-title"><h2>測試流域</h2><label class="toggle"><input type="checkbox" id="flows" checked>顯示流向</label></div><div class="map-wrap"><div id="map" role="group" aria-label="土地建設格網"></div><div class="river-caption">上游 ↓ 中游 ↓ 下游出口</div></div><div class="legend"><span><i class="normal"></i>正常</span><span><i class="ponding"></i>積水</span><span><i class="flooding"></i>淹水</span><span><i class="low"></i>斜紋：低窪區</span></div><p class="map-hint">選設施後點格子放置／替換。道路與河川固定。點格後可查看水況。</p><div class="river-strip"><span>河川水量</span><div id="river-levels"></div><span>出口 ↓</span></div></section>
+<aside><section class="build-panel"><h2>配置土地</h2><div id="facilities"></div><p id="facility-note" class="note"></p><button id="inspect-mode">只查看，不建設</button></section><section class="detail-panel"><h2 id="cell-title">點選一格查看</h2><div id="cell-detail"><p class="note">觀察水從哪裡來、容量用了多少，以及土壤是否飽和。</p></div></section></aside></div>
+<details><summary>怎麼觀察？</summary><p>先使用普通城市＋豪雨，觀察靠河與低窪格。暫停後更換一格，再按「重跑此配置」從乾燥開始比較。「重跑」保留設施；「清空地圖」移除可建格的設施並清除水況。</p><p>連續降雨時直接切換天氣，水與土壤會保留。「自動天氣測試」先小雨、大雨、豪雨，再短暫停雨與第二場豪雨；測試 E 會套用三場連續豪雨。排程結束後持續晴天退水。</p><p>設施內的藍色填充代表蓄水，格面藍色覆蓋代表地表水。土壤底線從淺色變深藍表示乾燥→濕潤→飽和；紅框代表淹水。河川水位條由上游向下游排列，溢岸時變紅。</p><p>所有水量都是相對單位。流向、延遲、排水與溢岸由規則決定，不能換算成毫米、分鐘或真實災害範圍。</p></details>
+</main><footer>水塑造人的生活，人也持續重新設計水的路徑。</footer><script>(()=>{
+// config/facilities.js
+// Relative teaching values, NOT engineering measurements.
+const facilityConfig = {
+  residential: { name:'住宅', icon:'🏠', color:'#cf9e65', runoff:2, infiltration:0, detention:0 },
+  industrial: { name:'工業', icon:'🏭', color:'#a59cb4', runoff:3, infiltration:0, detention:0 },
+  park: { name:'一般公園', icon:'🌳', color:'#91ba76', runoff:1, infiltration:2, detention:1 },
+  sunken: { name:'下凹公園', icon:'🌿', color:'#52a98b', runoff:0, infiltration:2, detention:4 },
+  forest: { name:'森林', icon:'🌲', color:'#407858', runoff:0, infiltration:3, detention:2 },
+  reservoir: { name:'調節池', icon:'💧', color:'#57a8c2', runoff:0, infiltration:0, detention:10 },
+  empty: { name:'空地', icon:'', color:'#b3c790', runoff:1, infiltration:1, detention:0 },
+  road: { name:'道路', icon:'', color:'#788694', runoff:3, infiltration:0, detention:0 },
+};
+
+// config/balance.js
+const balanceConfig = {
+  timestepSeconds:0.5, infiltrationPerLevel:0.20, detentionPerLevel:4.5,
+  soilCapacity:24, soilDryingPerTick:0.022, saturatedInfiltrationFraction:0.06,
+  storageReleasePerTick:0.025, reservoirReleasePerTick:0.18,
+  landFlowFraction:0.66, runoffSpeedPerLevel:0.08, landFlowLimit:12,
+  lowlandFlowMultiplier:0.65, surfaceRetention:0.07,
+  pondingThreshold:3.4, floodingThreshold:9, lowlandThresholdMultiplier:0.60,
+  riverFlowFraction:0.56, riverDischargeLimit:64, riverCapacity:130,
+  riverSpillFraction:0.16, riverRainCatchment:1,
+  visualDepthMax:8, saturationWet:0.35, saturationFull:0.85,
+};
+
+const F=facilityConfig, B=balanceConfig;
+
+// config/weather.js
+const weatherConfig = {
+  sunny:{name:'晴／停止降雨',intensity:0}, light:{name:'小雨',intensity:0.12},
+  heavy:{name:'大雨',intensity:0.38}, storm:{name:'豪雨',intensity:0.72},
+};
+// Durations measured in fixed simulation ticks; speeds do not change the model.
+const autoWeather = [
+  {weather:'light',ticks:16}, {weather:'heavy',ticks:20}, {weather:'storm',ticks:32},
+  {weather:'sunny',ticks:20}, {weather:'storm',ticks:48}, {weather:'sunny',ticks:100},
+];
+const continuousWeather = [
+  {weather:'storm',ticks:16}, {weather:'sunny',ticks:12},
+  {weather:'storm',ticks:40}, {weather:'sunny',ticks:12},
+  {weather:'storm',ticks:60}, {weather:'sunny',ticks:120},
+];
+function scheduledWeather(tick,schedule) {
+  let remaining=tick;
+  for(let i=0;i<schedule.length;i++) {
+    if(remaining<schedule[i].ticks) return {key:schedule[i].weather,stage:i+1,remaining:schedule[i].ticks-remaining};
+    remaining-=schedule[i].ticks;
+  }
+  return {key:'sunny',stage:schedule.length+1,remaining:0};
+}
+
+// data/map.js
+// Fixed terrain and routing. Coordinates are zero-based. No random generation.
+const WIDTH=12, HEIGHT=10;
+const riverColumn=6;
+const heights=[9,8,7,6,5,4,3,2,1,0];
+const mapData=Array.from({length:WIDTH*HEIGHT},(_,id)=>{
+  const x=id%WIDTH,y=Math.floor(id/WIDTH),river=x===riverColumn;
+  const road=!river&&(y===3||x===1);
+  const low=!river&&y>=6&&(x===4||x===5||x===7||x===8);
+  // Every land route descends toward the river, then the river routes south.
+  const flowTo=river?(y===HEIGHT-1?null:id+WIDTH):id+(x<riverColumn?1:-1);
+  return {id,x,y,type:river?'river':road?'road':'land',buildable:!river&&!road,
+    elevation:heights[y]+Math.abs(x-riverColumn)*0.7,lowland:low,flowTo,
+    banks:river?[id-1,id+1]:[]};
+});
+
+// data/scenarios.js
+const scenarios={
+  ordinary:{name:'普通城市',description:'住宅混合少量綠地。先跑一場豪雨，觀察局部低窪與匯流處。'},
+  A:{name:'A 硬鋪面城市',description:'大量住宅與工業，雨水快速流向河川及低窪區。'},
+  B:{name:'B 森林與公園',description:'先看第一場，再持續豪雨；土壤變濕後，入滲逐漸下降。'},
+  C:{name:'C 下凹公園',description:'與 A 相同的城市，將靠河匯流格改為下凹公園，觀察容量。'},
+  D:{name:'D 調節池',description:'與 A 相同的城市，將相同匯流格改為調節池，比較滿水前後。'},
+  E:{name:'E 連續豪雨',description:'綠地城市，連續三場豪雨，中間短暫停雨，保留土壤與蓄水。'},
+  blank:{name:'空白地圖',description:'從空地開始配置；道路與河川固定。'},
+};
+function scenarioLayout(key) {
+  if(!scenarios[key]) throw new Error('Unknown scenario');
+  return mapData.map(c=>{
+    if(!c.buildable) return c.type==='road'?'road':null;
+    if(key==='blank') return 'empty';
+    if(key==='B'||key==='E') return (c.x+c.y)%4===0?'park':'forest';
+    let facility=(c.x+c.y)%3===0?'industrial':'residential';
+    if(key==='ordinary') facility=(c.x+c.y)%4===0?'park':(c.x+c.y)%7===0?'forest':'residential';
+    if((key==='C'||key==='D')&&(c.x===5||c.x===7)&&[1,4,6,8].includes(c.y)) facility=key==='C'?'sunken':'reservoir';
+    return facility;
+  });
+}
+
+// engine/simulation.js
+
+function createSimulation(scenario='ordinary') {
+  const layout=scenarioLayout(scenario);
+  return {tick:0,cells:mapData.map((c,i)=>({...c,facility:layout[i],surface:0,storage:0,soil:0,
+    lastFlow:0,lastInfiltration:0,lastRain:0,lastSpill:0})),
+    totals:{rain:0,outflow:0},stats:{}};
+}
+function capacity(cell) {return (F[cell.facility]?.detention||0)*B.detentionPerLevel;}
+function thresholds(cell) {
+  const scale=cell.lowland?B.lowlandThresholdMultiplier:1;
+  return {ponding:B.pondingThreshold*scale,flooding:B.floodingThreshold*scale};
+}
+function status(cell) {
+  if(cell.type==='river') return cell.surface>B.riverCapacity?'溢岸': '河川';
+  const t=thresholds(cell);
+  return cell.surface>=t.flooding?'淹水':cell.surface>=t.ponding?'積水':'正常';
+}
+function resetWater(s) {
+  for(const c of s.cells) {c.surface=0;c.storage=0;c.soil=0;c.lastFlow=0;c.lastSpill=0;c.lastInfiltration=0;c.lastRain=0;}
+  s.tick=0;s.totals={rain:0,outflow:0};s.stats={};return s;
+}
+// Replacements preserve existing water, even when removing a full pond.
+function placeFacility(s,id,key) {
+  const c=s.cells[id];
+  if(!c?.buildable||!F[key]||key==='road') return false;
+  c.facility=key;const excess=Math.max(0,c.storage-capacity(c));
+  c.storage-=excess;c.surface+=excess;return true;
+}
+function waterInventory(s) {return s.cells.reduce((n,c)=>n+c.surface+c.storage+c.soil,0);}
+function step(s,rainfallIntensity) {
+  if(!Number.isFinite(rainfallIntensity)||rainfallIntensity<0) throw new Error('Invalid rain');
+  const incoming=new Float64Array(s.cells.length);
+  let infiltrated=0,riverSpill=0;
+  // All incoming flows become available next tick: no instantaneous cascades.
+  for(const c of s.cells) {
+    c.lastFlow=0;c.lastSpill=0;c.lastInfiltration=0;c.lastRain=rainfallIntensity;
+    const rain=rainfallIntensity*(c.type==='river'?B.riverRainCatchment:1);
+    c.surface+=rain;s.totals.rain+=rain;
+    if(c.type==='river') {
+      const flow=Math.min(c.surface*B.riverFlowFraction,B.riverDischargeLimit);
+      c.surface-=flow;c.lastFlow=flow;
+      if(c.flowTo===null) s.totals.outflow+=flow;else incoming[c.flowTo]+=flow;
+      // A conservative, bounded overbank transfer to the two adjacent cells.
+      const spill=Math.max(0,c.surface-B.riverCapacity)*B.riverSpillFraction;
+      c.surface-=spill;c.lastSpill=spill;riverSpill+=spill;
+      for(const id of c.banks) incoming[id]+=spill/c.banks.length;
+      continue;
+    }
+    const f=F[c.facility];
+    const drying=Math.min(c.soil,B.soilDryingPerTick);
+    c.soil-=drying;s.totals.outflow+=drying;
+    const saturation=c.soil/B.soilCapacity;
+    const rate=f.infiltration*B.infiltrationPerLevel*
+      (B.saturatedInfiltrationFraction+(1-B.saturatedInfiltrationFraction)*(1-saturation));
+    let budget=Math.min(rate,B.soilCapacity-c.soil);
+    const fromSurface=Math.min(c.surface,budget);c.surface-=fromSurface;budget-=fromSurface;
+    const fromStorage=Math.min(c.storage,budget);c.storage-=fromStorage;
+    c.lastInfiltration=fromSurface+fromStorage;c.soil+=c.lastInfiltration;infiltrated+=c.lastInfiltration;
+    const held=Math.min(c.surface,Math.max(0,capacity(c)-c.storage));c.surface-=held;c.storage+=held;
+    const release=Math.min(c.storage,c.facility==='reservoir'?B.reservoirReleasePerTick:B.storageReleasePerTick);
+    c.storage-=release;incoming[c.flowTo]+=release;
+    const fraction=Math.min(0.92,B.landFlowFraction+f.runoff*B.runoffSpeedPerLevel)*(c.lowland?B.lowlandFlowMultiplier:1);
+    const flow=Math.min(Math.max(0,c.surface-B.surfaceRetention)*fraction,B.landFlowLimit*(c.lowland?B.lowlandFlowMultiplier:1));
+    c.surface-=flow;c.lastFlow=flow+release;incoming[c.flowTo]+=flow;
+  }
+  for(const c of s.cells) c.surface+=incoming[c.id];
+  s.tick++;
+  const land=s.cells.filter(c=>c.type!=='river');
+  s.stats={infiltrated,riverSpill,ponding:land.filter(c=>status(c)==='積水').length,
+    flooding:land.filter(c=>status(c)==='淹水').length,
+    wet:land.filter(c=>F[c.facility].infiltration>0).reduce((n,c)=>n+c.soil/B.soilCapacity,0)/Math.max(1,land.filter(c=>F[c.facility].infiltration>0).length),
+    storage:s.cells.reduce((n,c)=>n+c.storage,0),capacity:s.cells.reduce((n,c)=>n+capacity(c),0),
+    river:s.cells.filter(c=>c.type==='river').map(c=>c.surface),
+    outlet:s.cells.find(c=>c.type==='river'&&c.flowTo===null).lastFlow};
+  return s;
+}
+
+// ui/renderer.js
+function initMap(s,onClick) {
+  const root=document.querySelector('#map');root.replaceChildren();
+  for(const c of s.cells) {
+    const el=document.createElement('button');el.className='tile';el.dataset.id=c.id;
+    el.innerHTML='<span class="storage"></span><span class="water"></span><span class="facility-icon"></span><span class="elevation"></span><span class="flow"></span><span class="soil"></span><span class="storage-label"></span><span class="alert"></span>';
+    el.addEventListener('click',()=>onClick(c.id));root.append(el);
+  }
+  const river=document.querySelector('#river-levels');river.replaceChildren();
+  for(const c of s.cells.filter(c=>c.type==='river')) {
+    const el=document.createElement('div');el.className='river-meter';el.innerHTML='<i></i>';el.dataset.id=c.id;river.append(el);
+  }
+}
+const number=n=>n.toFixed(1);
+function render(s,{selected,weatherLabel,playing,showFlows}) {
+  const root=document.querySelector('#map');root.classList.toggle('hide-flows',!showFlows);
+  for(const c of s.cells) {
+    const el=root.children[c.id],f=F[c.facility],st=status(c),cap=capacity(c),ratio=cap?c.storage/cap:0;
+    el.className=['tile',c.type,c.lowland?'lowland':'',st==='積水'?'ponded':'',st==='淹水'||st==='溢岸'?'flooded':'',selected===c.id?'selected':'',c.lastFlow>.08?'flowing':''].join(' ');
+    const terrainLight=Math.round(82-c.elevation*1.7);
+    el.style.setProperty('--terrain',f&&c.facility!=='empty'?f.color:`hsl(86 27% ${terrainLight}%)`);
+    const depth=c.type==='river'?c.surface/B.riverCapacity:c.surface/B.visualDepthMax;
+    el.style.setProperty('--water-height',`${Math.min(100,depth*100)}%`);
+    el.style.setProperty('--water-opacity',Math.min(.8,.23+depth*.6));
+    el.style.setProperty('--storage-height',`${ratio*75}%`);
+    el.style.setProperty('--soil-color',f?.infiltration?`hsl(${80+c.soil/B.soilCapacity*125} 48% ${75-c.soil/B.soilCapacity*45}%)`:'transparent');
+    el.querySelector('.facility-icon').textContent=f?.icon||'';
+    el.querySelector('.elevation').textContent=c.elevation.toFixed(0);
+    el.querySelector('.flow').textContent=c.type==='river'?'↓':c.x<6?'→':'←';
+    el.querySelector('.storage-label').textContent=cap?`${Math.round(ratio*100)}%`:'';
+    el.querySelector('.alert').textContent=st==='淹水'?'淹':st==='溢岸'?'溢':'';
+    el.setAttribute('aria-label',`${c.x+1}欄 ${c.y+1}列，${f?.name||'河川'}${c.lowland?'，低窪':''}，${st}，水量${number(c.surface)}${cap?'，蓄水'+Math.round(ratio*100)+'%':''}`);
+    el.title=el.getAttribute('aria-label');
+  }
+  const stats=s.stats,seconds=Math.floor(s.tick*B.timestepSeconds);
+  document.querySelector('#clock').textContent=`${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`;
+  document.querySelector('#weather-now').textContent=weatherLabel;
+  document.querySelector('#affected').innerHTML=`${(stats.ponding||0)+(stats.flooding||0)} <em>格</em>`;
+  document.querySelector('#affected-detail').textContent=`積水 ${stats.ponding||0} · 淹水 ${stats.flooding||0}`;
+  document.querySelector('#wet').innerHTML=`${Math.round((stats.wet||0)*100)}<em>%</em>`;
+  const totalCap=s.cells.reduce((n,c)=>n+capacity(c),0),stored=s.cells.reduce((n,c)=>n+c.storage,0);
+  document.querySelector('#stored').innerHTML=`${Math.round(totalCap?stored/totalCap*100:0)}<em>%</em>`;
+  document.querySelector('#stored-detail').textContent=`${number(stored)} / ${number(totalCap)} 相對水量`;
+  document.querySelector('#play').textContent=playing?'暫停模擬':'開始模擬';
+  for(const el of document.querySelector('#river-levels').children) {
+    const c=s.cells[Number(el.dataset.id)];el.firstChild.style.height=`${Math.min(100,c.surface/B.riverCapacity*100)}%`;
+    el.classList.toggle('over',c.surface>B.riverCapacity);el.title=`第${c.y+1}段：${number(c.surface)} / ${B.riverCapacity}`;
+  }
+  if(selected!==null) renderDetail(s.cells[selected]);
+}
+function renderDetail(c) {
+  const f=F[c.facility],cap=capacity(c),sat=c.soil/B.soilCapacity;
+  document.querySelector('#cell-title').textContent=`${c.x+1} 欄 · ${c.y+1} 列｜${f?.name||'河川'}`;
+  const rows=[['地形',c.type==='river'?'河道':c.lowland?'低窪區':'一般／高地'],['相對高度',number(c.elevation)],['水況',status(c)],['地表／河川水量',number(c.surface)],['本步向下游傳水',number(c.lastFlow)]];
+  if(c.type==='river') rows.push(['河道安全容量',B.riverCapacity],['本步溢岸',number(c.lastSpill)]);
+  else rows.push(['土壤',f.infiltration?(sat>=B.saturationFull?'飽和':sat>=B.saturationWet?'濕潤':'乾燥')+` ${Math.round(sat*100)}%`:'硬鋪面／無入滲'],['本步入滲',number(c.lastInfiltration)],['蓄水',`${number(c.storage)} / ${number(cap)}`]);
+  document.querySelector('#cell-detail').innerHTML=`<dl>${rows.map(([a,b])=>`<div><dt>${a}</dt><dd>${b}</dd></div>`).join('')}</dl>${cap?`<div class="meter"><i style="width:${c.storage/cap*100}%"></i></div><p class="note">${c.storage/cap>.95?'容量已接近滿水；後續水量將形成逕流。':'先承接雨水與上游來水，容量有限。'}</p>`:''}`;
+}
+
+// ui/app.js
+let sim=createSimulation(),playing=false,selected=null,tool='residential',weather='storm',scheduleTick=0,speed=1,accumulator=0;
+const $=id=>document.getElementById(id);
+for(const [key,s] of Object.entries(scenarios)) $('scenario').add(new Option(s.name,key));
+for(const [key,w] of Object.entries(weatherConfig)) $('weather').add(new Option(w.name,key));
+$('weather').add(new Option('自動天氣測試','auto'));$('weather').add(new Option('連續三場豪雨','continuous'));$('weather').value=weather;
+for(const [key,f] of [...Object.entries(F).filter(([k])=>!['empty','road'].includes(k)),['empty',{name:'拆除／空地',icon:'⊖'}]]) {
+  const b=document.createElement('button');b.className='facility-btn';b.dataset.tool=key;b.innerHTML=`<span>${f.icon}</span>${f.name}`;
+  b.addEventListener('click',()=>{tool=key;updateTool();});$('facilities').append(b);
+}
+function updateTool() {
+  for(const b of $('facilities').children) b.classList.toggle('active',b.dataset.tool===tool);
+  $('inspect-mode').classList.toggle('active',tool===null);
+  const f=F[tool];$('facility-note').textContent=f?`${f.name}｜入滲 ${f.infiltration} · 暫存 ${f.detention} · 逕流 ${f.runoff}（相對尺度）`:'點格子查看水况，保留現有配置。';
+}
+function currentWeather() {
+  if(weather==='auto'||weather==='continuous') return scheduledWeather(scheduleTick,weather==='auto'?autoWeather:continuousWeather);
+  return {key:weather};
+}
+function draw() {
+  const w=currentWeather();render(sim,{selected,playing,showFlows:$('flows').checked,
+    weatherLabel:weatherConfig[w.key].name+(w.stage?` · 第 ${w.stage} 階段`:'')});
+}
+function mapClick(id) {selected=id;if(tool!==null) placeFacility(sim,id,tool);refreshStats();draw();}
+function refreshStats() {
+  // Editing never advances simulation or clears water. Statistics refresh via a pure read.
+  const land=sim.cells.filter(c=>c.type!=='river');
+  sim.stats.ponding=land.filter(c=>c.surface>=B.pondingThreshold*(c.lowland?B.lowlandThresholdMultiplier:1)&&c.surface<B.floodingThreshold*(c.lowland?B.lowlandThresholdMultiplier:1)).length;
+  sim.stats.flooding=land.filter(c=>c.surface>=B.floodingThreshold*(c.lowland?B.lowlandThresholdMultiplier:1)).length;
+  const green=land.filter(c=>F[c.facility].infiltration>0);sim.stats.wet=green.reduce((n,c)=>n+c.soil/B.soilCapacity,0)/Math.max(1,green.length);
+}
+function loadScenario(key) {
+  if(!scenarios[key]) throw new Error('Unknown scenario');
+  playing=false;sim=createSimulation(key);selected=null;scheduleTick=0;accumulator=0;
+  weather=key==='E'?'continuous':'storm';$('weather').value=weather;$('scenario').value=key;
+  $('scenario-note').textContent=scenarios[key].description;
+  $('cell-title').textContent='點選一格查看';$('cell-detail').innerHTML='<p class="note">先觀察靠河匯流格與下游低窪區。</p>';
+  initMap(sim,mapClick);draw();
+}
+function advance() {step(sim,weatherConfig[currentWeather().key].intensity);scheduleTick++;draw();}
+$('scenario').addEventListener('change',e=>loadScenario(e.target.value));
+$('weather').addEventListener('change',e=>{weather=e.target.value;scheduleTick=0;draw();});
+$('speed').addEventListener('change',e=>{speed=Number(e.target.value);});
+$('play').addEventListener('click',()=>{playing=!playing;accumulator=0;draw();});
+$('step').addEventListener('click',()=>{playing=false;advance();});
+$('water-reset').addEventListener('click',()=>{playing=false;resetWater(sim);scheduleTick=0;accumulator=0;draw();});
+$('map-reset').addEventListener('click',()=>loadScenario('blank'));
+$('flows').addEventListener('change',draw);
+$('inspect-mode').addEventListener('click',()=>{tool=null;updateTool();});
+let previous=performance.now();
+function animate(now) {
+  const elapsed=Math.min(now-previous,1000);previous=now;
+  if(playing) {accumulator+=elapsed*speed;while(accumulator>=B.timestepSeconds*1000) {accumulator-=B.timestepSeconds*1000;advance();}}
+  requestAnimationFrame(animate);
+}
+document.addEventListener('visibilitychange',()=>{previous=performance.now();accumulator=0;});
+loadScenario('ordinary');updateTool();requestAnimationFrame(animate);
+// Optional browser agent API; uses the same actions and state as UI.
+if(document.modelContext?.registerTool) {
+  const lifecycle=new AbortController();
+  window.addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
+  const tools=[
+    {name:'read_water_state',description:'Read current water quantities and facility layout.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute:()=>({tick:sim.tick,stats:sim.stats,cells:sim.cells.map(c=>({id:c.id,facility:c.facility,surface:c.surface,storage:c.storage,soil:c.soil}))})},
+    {name:'configure_water_scenario',description:'Replace the map with a preset and reset all water; leaves simulation paused.',inputSchema:{type:'object',properties:{scenario:{type:'string',enum:Object.keys(scenarios)}},required:['scenario'],additionalProperties:false},execute:input=>{if(!scenarios[input?.scenario]) throw new Error('Invalid scenario');loadScenario(input.scenario);return {scenario:input.scenario,tick:sim.tick};}},
+    {name:'place_water_facilities',description:'Place or remove facilities on buildable cells; preserve water.',inputSchema:{type:'object',properties:{placements:{type:'array',maxItems:120,items:{type:'object',properties:{id:{type:'integer'},facility:{type:'string',enum:Object.keys(F).filter(k=>k!=='road')}},required:['id','facility'],additionalProperties:false}}},required:['placements'],additionalProperties:false},execute:input=>{if(!Array.isArray(input?.placements)||input.placements.length>120||input.placements.some(p=>!Number.isInteger(p.id)||!sim.cells[p.id]?.buildable||!F[p.facility]||p.facility==='road')) throw new Error('Invalid placements');for(const p of input.placements) placeFacility(sim,p.id,p.facility);refreshStats();draw();return {changed:input.placements.length};}}
+  ];
+  for(const t of tools) {try {Promise.resolve(document.modelContext.registerTool(t,{signal:lifecycle.signal})).catch(()=>{});}catch{}}
+}
+})();</script></body></html>

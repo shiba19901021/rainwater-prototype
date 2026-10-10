@@ -1,0 +1,409 @@
+{
+  "release": "V1.0 Core Simulation",
+  "date": "2026-10-10",
+  "source": "water-resilience-p0.html",
+  "sourceSha256": "18d185465a23de04beb843ecff2967af53deefd4fdcf71e2b9d48729c711a30b",
+  "facilityConfig": {
+    "intake": {
+      "name": "河川取水站",
+      "icon": "🚰",
+      "color": "#6da9ab",
+      "runoff": 2,
+      "infiltration": 0,
+      "detention": 0,
+      "housing": 0,
+      "jobs": 0,
+      "publicService": 0,
+      "leisure": 0,
+      "role": "可以取用河水，但受水量與水質限制。"
+    },
+    "residential": {
+      "name": "住宅",
+      "icon": "🏠",
+      "color": "#cf9e65",
+      "runoff": 2,
+      "infiltration": 0,
+      "detention": 0,
+      "waterDemand": 2,
+      "housing": 1,
+      "jobs": 0,
+      "publicService": 0,
+      "leisure": 0,
+      "role": "提供住宅，但需要持續用水。",
+      "pollutionLoad": 1
+    },
+    "industrial": {
+      "name": "工業",
+      "icon": "🏭",
+      "color": "#a59cb4",
+      "runoff": 3,
+      "infiltration": 0,
+      "detention": 0,
+      "waterDemand": 3,
+      "housing": 0,
+      "jobs": 2,
+      "publicService": 0,
+      "leisure": 0,
+      "role": "提供較多工作，但單座用水與污染都較高。",
+      "pollutionLoad": 3
+    },
+    "park": {
+      "name": "一般公園",
+      "icon": "🌳",
+      "color": "#91ba76",
+      "runoff": 1,
+      "infiltration": 2,
+      "detention": 1,
+      "housing": 0,
+      "jobs": 0,
+      "publicService": 0,
+      "leisure": 1,
+      "role": "提供休閒空間、入滲與少量滯洪。"
+    },
+    "sunken": {
+      "name": "下凹公園",
+      "icon": "🌿",
+      "color": "#52a98b",
+      "runoff": 0,
+      "infiltration": 2,
+      "detention": 4,
+      "housing": 0,
+      "jobs": 0,
+      "publicService": 0,
+      "leisure": 1,
+      "role": "兼具休閒與較強滯洪。"
+    },
+    "forest": {
+      "name": "森林",
+      "icon": "🌲",
+      "color": "#407858",
+      "runoff": 0,
+      "infiltration": 3,
+      "detention": 2,
+      "housing": 0,
+      "jobs": 0,
+      "publicService": 0,
+      "leisure": 0,
+      "role": "提升入滲與自然蓄水，但不提供城市生活功能。"
+    },
+    "reservoir": {
+      "name": "調節池",
+      "icon": "💧",
+      "color": "#57a8c2",
+      "runoff": 0,
+      "infiltration": 0,
+      "detention": 10,
+      "housing": 0,
+      "jobs": 0,
+      "publicService": 0,
+      "leisure": 0,
+      "role": "大量蓄水，可協助洪水與乾旱。"
+    },
+    "treatment": {
+      "name": "污水處理＋再利用",
+      "icon": "♻️",
+      "color": "#86b2b1",
+      "runoff": 2,
+      "infiltration": 0,
+      "detention": 0,
+      "treatmentCapacityPerStep": 1.25,
+      "reuseRatio": 0.5,
+      "housing": 0,
+      "jobs": 0,
+      "publicService": 0,
+      "leisure": 0,
+      "role": "處理污水並回收部分用水，但容量有限。"
+    },
+    "wetland": {
+      "name": "濕地公園",
+      "icon": "🌾",
+      "color": "#779a81",
+      "runoff": 1,
+      "infiltration": 1,
+      "detention": 2.888888888888889,
+      "purificationCapacityPerStep": 1,
+      "housing": 0,
+      "jobs": 0,
+      "publicService": 0,
+      "leisure": 1,
+      "role": "兼具休閒、滯洪與自然淨化。"
+    },
+    "empty": {
+      "name": "空地",
+      "icon": "",
+      "color": "#b3c790",
+      "runoff": 1,
+      "infiltration": 1,
+      "detention": 0,
+      "housing": 0,
+      "jobs": 0,
+      "publicService": 0,
+      "leisure": 0,
+      "role": "拆除設施，保留現有水量。"
+    },
+    "road": {
+      "name": "道路",
+      "icon": "",
+      "color": "#788694",
+      "runoff": 3,
+      "infiltration": 0,
+      "detention": 0,
+      "housing": 0,
+      "jobs": 0,
+      "publicService": 0,
+      "leisure": 0,
+      "role": "固定道路。"
+    },
+    "commercial": {
+      "name": "商業",
+      "icon": "🏪",
+      "color": "#dfb66e",
+      "runoff": 2,
+      "infiltration": 0,
+      "detention": 0,
+      "waterDemand": 2,
+      "pollutionLoad": 1,
+      "housing": 0,
+      "jobs": 1,
+      "publicService": 0,
+      "leisure": 0,
+      "role": "提供工作，污染較低，但增加硬鋪面。"
+    },
+    "publicService": {
+      "name": "公共服務",
+      "icon": "🏥",
+      "color": "#e5aaad",
+      "runoff": 2,
+      "infiltration": 0,
+      "detention": 0,
+      "waterDemand": 2,
+      "pollutionLoad": 1,
+      "housing": 0,
+      "jobs": 0,
+      "publicService": 1,
+      "leisure": 0,
+      "role": "滿足城市公共服務需求。"
+    },
+    "agriculture": {
+      "name": "農地",
+      "icon": "🌱",
+      "color": "#bed18a",
+      "runoff": 0,
+      "infiltration": 2,
+      "detention": 0,
+      "waterDemand": 5,
+      "pollutionLoad": 2,
+      "housing": 0,
+      "jobs": 1,
+      "publicService": 0,
+      "leisure": 0,
+      "role": "提供工作、土地透水，但需要較多水。"
+    }
+  },
+  "balanceConfig": {
+    "cityResilience": {
+      "affectedFacilities": [
+        "residential",
+        "commercial",
+        "industrial",
+        "agriculture",
+        "publicService"
+      ],
+      "floodFunctionThresholds": {
+        "pondingMultiplier": 1,
+        "floodingMultiplier": 1,
+        "severeFloodingMultiplier": 1.5,
+        "lightFactor": 0.75,
+        "moderateFactor": 0.4,
+        "severeFactor": 0
+      },
+      "waterFunctionThresholds": {
+        "pressureStart": 0.1,
+        "severe": 0.85
+      },
+      "residentialWaterSensitivity": 0.65,
+      "commercialWaterSensitivity": 0.8,
+      "industrialWaterSensitivity": 1.15,
+      "agricultureWaterSensitivity": 1.25,
+      "publicServiceWaterSensitivity": 0.5,
+      "recoveryRate": 0.016666666666666666,
+      "recoveryMultiplierFromPublicService": 0.5,
+      "maxRecoveryMultiplier": 1.5,
+      "cityFunctionThresholds": {
+        "good": 0.9,
+        "pressured": 0.7,
+        "insufficient": 0.4
+      },
+      "temporaryFailureThreshold": 0.4,
+      "epsilon": 1e-9
+    },
+    "cityNeeds": {
+      "defaultHousingTarget": 12,
+      "housingPerResidence": 1,
+      "jobsPerCommercial": 1,
+      "jobsPerIndustrial": 2,
+      "jobsPerAgriculture": 1,
+      "jobsTargetRatio": 1,
+      "publicServiceTargetRatio": 0.3333333333333333,
+      "leisureTargetRatio": 0.25
+    },
+    "pollution": {
+      "residentialPollutionLoad": 1,
+      "industrialPollutionLoad": 3,
+      "pollutionLoadPerUnit": 0.04,
+      "treatmentCapacityPerStep": 1.25,
+      "treatmentNearCapacityRatio": 0.85,
+      "reuseRatio": 0.5,
+      "wastewaterReturnRatio": 0.7,
+      "reuseTankCapacityPerFacility": 8,
+      "sourcePriority": [
+        "reuse",
+        "municipal",
+        "river",
+        "reservoir"
+      ],
+      "wetlandPurificationRate": 0.3,
+      "wetlandPurificationCapacity": 1,
+      "wetlandDetentionCapacity": 13,
+      "pollutionTransportRate": 1,
+      "concentrationMinWater": 1,
+      "pollutionStatusThresholds": {
+        "pressured": 0.02,
+        "polluted": 0.05,
+        "severe": 0.2
+      },
+      "intakePollutionThresholds": {
+        "start": 0.02,
+        "stop": 0.12
+      },
+      "visualColors": {
+        "good": "#3895c3",
+        "pressured": "#6f999d",
+        "polluted": "#737f74",
+        "severe": "#555f54"
+      }
+    },
+    "waterSupply": {
+      "demandPerUnit": 0.04,
+      "municipalSupply": 10.4,
+      "municipalMinimumLevel": 0,
+      "initialReservoirFillRatio": 0.5,
+      "initialRiverLevel": 30,
+      "initialSoilMoisture": 0.45,
+      "droughtGracePeriod": 25,
+      "droughtStressRate": 1,
+      "droughtRecoveryRate": 2,
+      "droughtEffectiveRainThreshold": 0.1,
+      "municipalSupplyDecayThreshold": 25,
+      "municipalDecayRampSeconds": 60,
+      "municipalDroughtDecay": 0.025,
+      "recoveryRainThreshold": 0.2,
+      "recoveryFullRain": 0.38,
+      "municipalRecoveryRate": 0.045,
+      "sourcePriority": [
+        "municipal",
+        "river",
+        "reservoir"
+      ],
+      "reservoirSupplyRate": 1.2,
+      "maxIntakePerStep": 2,
+      "riverMinimumIntakeLevel": 5,
+      "riverIntakeRamp": 30,
+      "reserveHorizon": 20,
+      "retainInitialReserveDuringDryWeather": true,
+      "shortageWarning": 0.02,
+      "severeShortage": 0.5,
+      "waterStatusThresholds": {
+        "sufficient": 1,
+        "low": 0.9,
+        "tight": 0.65
+      },
+      "riverVisualMinimumWidth": 0.22,
+      "dryVisualAfterTicks": 24,
+      "dryVisualFullTicks": 100
+    },
+    "timestepSeconds": 0.5,
+    "infiltrationPerLevel": 0.2,
+    "detentionPerLevel": 4.5,
+    "soilCapacity": 24,
+    "soilDryingPerTick": 0.022,
+    "saturatedInfiltrationFraction": 0.06,
+    "storageReleasePerTick": 0.025,
+    "reservoirReleasePerTick": 0.18,
+    "landFlowFraction": 0.65,
+    "runoffSpeedPerLevel": 0.01,
+    "landFlowLimit": 4.8,
+    "landReceivingCapacity": 18,
+    "riverReceivingCapacityMultiplier": 1.6,
+    "riverPressureStartFraction": 0.65,
+    "maxLandFlowFraction": 0.92,
+    "landPressureExponent": 2,
+    "riverPressureExponent": 1,
+    "lowlandReceivingMultiplier": 1.5,
+    "lowlandFlowMultiplier": 0.72,
+    "surfaceRetention": 0.07,
+    "pondingThreshold": 3.4,
+    "floodingThreshold": 9,
+    "lowlandThresholdMultiplier": 0.6,
+    "riverFlowFraction": 0.56,
+    "riverDischargeLimit": 64,
+    "riverCapacity": 130,
+    "riverSpillFraction": 0.16,
+    "riverRainCatchment": 1,
+    "visualDepthMax": 8,
+    "saturationWet": 0.35,
+    "saturationFull": 0.85
+  },
+  "weatherConfig": {
+    "sunny": {
+      "name": "晴／停止降雨",
+      "intensity": 0
+    },
+    "light": {
+      "name": "小雨",
+      "intensity": 0.12
+    },
+    "heavy": {
+      "name": "大雨",
+      "intensity": 0.38
+    },
+    "storm": {
+      "name": "豪雨",
+      "intensity": 0.72
+    }
+  },
+  "roundConfig": {
+    "minSeconds": 60,
+    "maxSeconds": 240,
+    "incrementSeconds": 30,
+    "defaultSeconds": 120,
+    "blockSeconds": 30,
+    "rampSeconds": 10,
+    "modes": {
+      "auto": "自動",
+      "wet": "偏濕",
+      "dry": "偏乾",
+      "compound": "極端／複合"
+    },
+    "stories": {
+      "auto": {
+        "stable": 0.24,
+        "trend": 0.38,
+        "pressure": 0.6,
+        "recovery": 0.24
+      },
+      "wet": {
+        "stable": 0.32,
+        "trend": 0.38,
+        "pressure": 0.72,
+        "recovery": 0.32
+      },
+      "dry": {
+        "stable": 0,
+        "trend": 0.06,
+        "pressure": 0,
+        "recovery": 0
+      }
+    }
+  }
+}

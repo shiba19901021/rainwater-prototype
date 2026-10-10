@@ -1,0 +1,925 @@
+{
+  "candidate": {
+    "rate": 0.3,
+    "wetlandCap": 1,
+    "treatmentCap": 1.25
+  },
+  "cases": {
+    "A": {
+      "case": "A",
+      "industry": 12,
+      "wetlandCount": 0,
+      "plantCount": 0,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": null,
+      "maxUtilizationPercent": 0,
+      "maxOverloadPerStep": 0,
+      "cumulativeOverload": 0,
+      "maxWaterError": 3.0515820981236175e-9,
+      "maxPollutionError": 1.9539925233402755e-13,
+      "peakConcentration": 0.47337025682501577,
+      "worstQuality": "嚴重污染",
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 0,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 320.31428571428546,
+      "finalRiverPollution": 25.285714285714302,
+      "finalQuality": "嚴重污染",
+      "finalOutletConcentration": 0.053857700702451626,
+      "treatmentShare": 0,
+      "wetlandShare": 0,
+      "actualCapacityUtilizationPercent": null,
+      "wetlands": [],
+      "plants": [],
+      "reuseProduced": 0,
+      "reuseConsumed": 0
+    },
+    "B": {
+      "case": "B",
+      "industry": 12,
+      "wetlandCount": 1,
+      "plantCount": 0,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": null,
+      "maxUtilizationPercent": 0,
+      "maxOverloadPerStep": 0,
+      "cumulativeOverload": 0,
+      "maxWaterError": 3.0515820981236175e-9,
+      "maxPollutionError": 1.4743761767022079e-12,
+      "peakConcentration": 0.47337025682501577,
+      "worstQuality": "嚴重污染",
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 100.72285714285746,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 224.2200000000007,
+      "finalRiverPollution": 20.657142857142865,
+      "finalQuality": "嚴重污染",
+      "finalOutletConcentration": 0.03770039049171613,
+      "treatmentShare": 0,
+      "wetlandShare": 0.29144345238095365,
+      "actualCapacityUtilizationPercent": null,
+      "wetlands": [
+        {
+          "id": 53,
+          "total": 100.72285714285746,
+          "share": 0.29144345238095365
+        }
+      ],
+      "plants": [],
+      "reuseProduced": 0,
+      "reuseConsumed": 0
+    },
+    "C": {
+      "case": "C",
+      "industry": 12,
+      "wetlandCount": 2,
+      "plantCount": 0,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": null,
+      "maxUtilizationPercent": 0,
+      "maxOverloadPerStep": 0,
+      "cumulativeOverload": 0,
+      "maxWaterError": 3.0643150239484385e-9,
+      "maxPollutionError": 1.4104273304837989e-12,
+      "peakConcentration": 0.47337025682501577,
+      "worstQuality": "嚴重污染",
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 170.68885714285753,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 156.95400000000058,
+      "finalRiverPollution": 17.95714285714287,
+      "finalQuality": "嚴重污染",
+      "finalOutletConcentration": 0.026390273344201298,
+      "treatmentShare": 0,
+      "wetlandShare": 0.49389136904762077,
+      "actualCapacityUtilizationPercent": null,
+      "wetlands": [
+        {
+          "id": 53,
+          "total": 100.72285714285746,
+          "share": 0.29144345238095365
+        },
+        {
+          "id": 65,
+          "total": 69.96599999999992,
+          "share": 0.2024479166666667
+        }
+      ],
+      "plants": [],
+      "reuseProduced": 0,
+      "reuseConsumed": 0
+    },
+    "D": {
+      "case": "D",
+      "industry": 12,
+      "wetlandCount": 4,
+      "plantCount": 0,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": null,
+      "maxUtilizationPercent": 0,
+      "maxOverloadPerStep": 0,
+      "cumulativeOverload": 0,
+      "maxWaterError": 3.0752289603697136e-9,
+      "maxPollutionError": 1.779909553079051e-12,
+      "peakConcentration": 0.47337025682501577,
+      "worstQuality": "嚴重污染",
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 253.0411971428583,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 76.90746000000019,
+      "finalRiverPollution": 15.651342857142865,
+      "finalQuality": "嚴重污染",
+      "finalOutletConcentration": 0.01293123335092851,
+      "treatmentShare": 0,
+      "wetlandShare": 0.7321793898809567,
+      "actualCapacityUtilizationPercent": null,
+      "wetlands": [
+        {
+          "id": 53,
+          "total": 100.72285714285746,
+          "share": 0.29144345238095365
+        },
+        {
+          "id": 65,
+          "total": 69.96599999999992,
+          "share": 0.2024479166666667
+        },
+        {
+          "id": 77,
+          "total": 48.598200000000176,
+          "share": 0.14061979166666735
+        },
+        {
+          "id": 89,
+          "total": 33.75413999999991,
+          "share": 0.09766822916666652
+        }
+      ],
+      "plants": [],
+      "reuseProduced": 0,
+      "reuseConsumed": 0
+    },
+    "E": {
+      "case": "E",
+      "industry": 12,
+      "wetlandCount": 0,
+      "plantCount": 1,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": 0.5,
+      "maxUtilizationPercent": 115.20000000000003,
+      "maxOverloadPerStep": 0.1900000000000004,
+      "cumulativeOverload": 45.600000000000016,
+      "maxWaterError": 3.0515820981236175e-9,
+      "maxPollutionError": 4.5208281562736374e-13,
+      "peakConcentration": 0.07295020796465837,
+      "worstQuality": "污染",
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 300,
+      "pollutionPurifiedByWetland": 0,
+      "pollutionDischarged": 45.600000000000016,
+      "outletPollutionMass": 42.26369047619049,
+      "finalRiverPollution": 3.33630952380953,
+      "finalQuality": "受壓",
+      "finalOutletConcentration": 0.007214420954992165,
+      "treatmentShare": 0.8680555555555567,
+      "wetlandShare": 0,
+      "actualCapacityUtilizationPercent": 100,
+      "wetlands": [],
+      "plants": [
+        {
+          "id": 113,
+          "treated": 300,
+          "firstOverload": 0.5,
+          "maxRequested": 1.4400000000000004,
+          "maxUtilizationPercent": 115.20000000000003,
+          "maxOverload": 0.1900000000000004
+        }
+      ],
+      "reuseProduced": 104.99999999999999,
+      "reuseConsumed": 104.56249999999999
+    },
+    "F": {
+      "case": "F",
+      "industry": 12,
+      "wetlandCount": 0,
+      "plantCount": 2,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": null,
+      "maxUtilizationPercent": 57.600000000000016,
+      "maxOverloadPerStep": 0,
+      "cumulativeOverload": 0,
+      "maxWaterError": 3.0242972570704296e-9,
+      "maxPollutionError": 0,
+      "peakConcentration": 0,
+      "worstQuality": "良好",
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 345.59999999999957,
+      "pollutionPurifiedByWetland": 0,
+      "pollutionDischarged": 0,
+      "outletPollutionMass": 0,
+      "finalRiverPollution": 0,
+      "finalQuality": "良好",
+      "finalOutletConcentration": 0,
+      "treatmentShare": 1,
+      "wetlandShare": 0,
+      "actualCapacityUtilizationPercent": 57.59999999999993,
+      "wetlands": [],
+      "plants": [
+        {
+          "id": 113,
+          "treated": 172.79999999999978,
+          "firstOverload": null,
+          "maxRequested": 0.7200000000000002,
+          "maxUtilizationPercent": 57.600000000000016,
+          "maxOverload": 0
+        },
+        {
+          "id": 115,
+          "treated": 172.79999999999978,
+          "firstOverload": null,
+          "maxRequested": 0.7200000000000002,
+          "maxUtilizationPercent": 57.600000000000016,
+          "maxOverload": 0
+        }
+      ],
+      "reuseProduced": 120.96000000000045,
+      "reuseConsumed": 120.45600000000044
+    },
+    "G": {
+      "case": "G",
+      "industry": 12,
+      "wetlandCount": 2,
+      "plantCount": 1,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": 0.5,
+      "maxUtilizationPercent": 115.20000000000003,
+      "maxOverloadPerStep": 0.1900000000000004,
+      "cumulativeOverload": 45.600000000000016,
+      "maxWaterError": 3.055220076930709e-9,
+      "maxPollutionError": 3.2152058793144533e-13,
+      "peakConcentration": 0.07295020796465837,
+      "worstQuality": "污染",
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 300,
+      "pollutionPurifiedByWetland": 22.521446428571306,
+      "pollutionDischarged": 45.600000000000016,
+      "outletPollutionMass": 20.709208333333315,
+      "finalRiverPollution": 2.3693452380952422,
+      "finalQuality": "受壓",
+      "finalOutletConcentration": 0.0035350662679461613,
+      "treatmentShare": 0.8680555555555567,
+      "wetlandShare": 0.06516622230489391,
+      "actualCapacityUtilizationPercent": 100,
+      "wetlands": [
+        {
+          "id": 53,
+          "total": 13.289821428571495,
+          "share": 0.0384543444113759
+        },
+        {
+          "id": 65,
+          "total": 9.231625000000024,
+          "share": 0.026711877893518622
+        }
+      ],
+      "plants": [
+        {
+          "id": 113,
+          "treated": 300,
+          "firstOverload": 0.5,
+          "maxRequested": 1.4400000000000004,
+          "maxUtilizationPercent": 115.20000000000003,
+          "maxOverload": 0.1900000000000004
+        }
+      ],
+      "reuseProduced": 104.99999999999999,
+      "reuseConsumed": 104.56249999999999
+    },
+    "H": {
+      "case": "H",
+      "industry": 30,
+      "wetlandCount": 0,
+      "plantCount": 1,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": 0.5,
+      "maxUtilizationPercent": 288.00000000000017,
+      "maxOverloadPerStep": 2.3500000000000023,
+      "cumulativeOverload": 564.000000000003,
+      "maxWaterError": 3.0106548365438357e-9,
+      "maxPollutionError": 1.7408297026122455e-12,
+      "peakConcentration": 0.3278669973949595,
+      "worstQuality": "嚴重污染",
+      "pollutionGenerated": 864.0000000000038,
+      "pollutionTreated": 300,
+      "pollutionPurifiedByWetland": 0,
+      "pollutionDischarged": 564.000000000003,
+      "outletPollutionMass": 526.2321428571449,
+      "finalRiverPollution": 37.767857142857075,
+      "finalQuality": "嚴重污染",
+      "finalOutletConcentration": 0.0823426684316125,
+      "treatmentShare": 0.3472222222222207,
+      "wetlandShare": 0,
+      "actualCapacityUtilizationPercent": 100,
+      "wetlands": [],
+      "plants": [
+        {
+          "id": 113,
+          "treated": 300,
+          "firstOverload": 0.5,
+          "maxRequested": 3.6000000000000023,
+          "maxUtilizationPercent": 288.00000000000017,
+          "maxOverload": 2.3500000000000023
+        }
+      ],
+      "reuseProduced": 104.99999999999999,
+      "reuseConsumed": 104.56249999999999
+    },
+    "I": {
+      "case": "I",
+      "industry": 30,
+      "wetlandCount": 0,
+      "plantCount": 2,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": 0.5,
+      "maxUtilizationPercent": 144.00000000000009,
+      "maxOverloadPerStep": 1.1000000000000023,
+      "cumulativeOverload": 264.0000000000001,
+      "maxWaterError": 3.0220235203159973e-9,
+      "maxPollutionError": 4.650502205549856e-12,
+      "peakConcentration": 0.16344626622187144,
+      "worstQuality": "污染",
+      "pollutionGenerated": 864.0000000000038,
+      "pollutionTreated": 600,
+      "pollutionPurifiedByWetland": 0,
+      "pollutionDischarged": 264.0000000000001,
+      "outletPollutionMass": 246.32142857142767,
+      "finalRiverPollution": 17.678571428571427,
+      "finalQuality": "污染",
+      "finalOutletConcentration": 0.03909263898512904,
+      "treatmentShare": 0.6944444444444414,
+      "wetlandShare": 0,
+      "actualCapacityUtilizationPercent": 100,
+      "wetlands": [],
+      "plants": [
+        {
+          "id": 113,
+          "treated": 300,
+          "firstOverload": 0.5,
+          "maxRequested": 1.8000000000000012,
+          "maxUtilizationPercent": 144.00000000000009,
+          "maxOverload": 0.5500000000000012
+        },
+        {
+          "id": 115,
+          "treated": 300,
+          "firstOverload": 0.5,
+          "maxRequested": 1.8000000000000012,
+          "maxUtilizationPercent": 144.00000000000009,
+          "maxOverload": 0.5500000000000012
+        }
+      ],
+      "reuseProduced": 209.99999999999997,
+      "reuseConsumed": 209.12499999999997
+    },
+    "J": {
+      "case": "J",
+      "industry": 30,
+      "wetlandCount": 4,
+      "plantCount": 0,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": null,
+      "maxUtilizationPercent": 0,
+      "maxOverloadPerStep": 0,
+      "cumulativeOverload": 0,
+      "maxWaterError": 3.0233877623686567e-9,
+      "maxPollutionError": 8.171241461241152e-13,
+      "peakConcentration": 0.47337025682501577,
+      "worstQuality": "嚴重污染",
+      "pollutionGenerated": 864.0000000000038,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 630.2274294131547,
+      "pollutionDischarged": 864.0000000000038,
+      "outletPollutionMass": 199.54149915827676,
+      "finalRiverPollution": 34.23107142857146,
+      "finalQuality": "嚴重污染",
+      "finalOutletConcentration": 0.03081520437863188,
+      "treatmentShare": 0,
+      "wetlandShare": 0.729429895154111,
+      "actualCapacityUtilizationPercent": null,
+      "wetlands": [
+        {
+          "id": 53,
+          "total": 235.10350099627613,
+          "share": 0.2721105335605036
+        },
+        {
+          "id": 65,
+          "total": 181.490378272546,
+          "share": 0.21005830818581622
+        },
+        {
+          "id": 77,
+          "total": 126.06826479078275,
+          "share": 0.14591234350784976
+        },
+        {
+          "id": 89,
+          "total": 87.5652853535471,
+          "share": 0.10134870989993833
+        }
+      ],
+      "plants": [],
+      "reuseProduced": 0,
+      "reuseConsumed": 0
+    }
+  },
+  "wetlandSweep": [
+    {
+      "rate": 0.25,
+      "wetlandCap": 0.75,
+      "B": {
+        "share": 0.2428695436507937,
+        "outlet": 240.23571428571555
+      },
+      "C": {
+        "share": 0.4236266121031763,
+        "outlet": 180.17678571428613
+      },
+      "D": {
+        "share": 0.6582544720362113,
+        "outlet": 101.34944196428542
+      },
+      "J": {
+        "share": 0.6452944667408275,
+        "outlet": 268.96976600378224
+      }
+    },
+    {
+      "rate": 0.25,
+      "wetlandCap": 1,
+      "B": {
+        "share": 0.2428695436507937,
+        "outlet": 240.23571428571555
+      },
+      "C": {
+        "share": 0.4236266121031763,
+        "outlet": 180.17678571428613
+      },
+      "D": {
+        "share": 0.6582544720362113,
+        "outlet": 101.34944196428542
+      },
+      "J": {
+        "share": 0.6624930245535687,
+        "outlet": 255.06863839285626
+      }
+    },
+    {
+      "rate": 0.25,
+      "wetlandCap": 1.25,
+      "B": {
+        "share": 0.2428695436507937,
+        "outlet": 240.23571428571555
+      },
+      "C": {
+        "share": 0.4236266121031763,
+        "outlet": 180.17678571428613
+      },
+      "D": {
+        "share": 0.6582544720362113,
+        "outlet": 101.34944196428542
+      },
+      "J": {
+        "share": 0.6624930245535687,
+        "outlet": 255.06863839285626
+      }
+    },
+    {
+      "rate": 0.3,
+      "wetlandCap": 0.75,
+      "B": {
+        "share": 0.29144345238095365,
+        "outlet": 224.2200000000007
+      },
+      "C": {
+        "share": 0.49389136904762077,
+        "outlet": 156.95400000000058
+      },
+      "D": {
+        "share": 0.7321793898809567,
+        "outlet": 76.90746000000019
+      },
+      "J": {
+        "share": 0.6920739813900061,
+        "outlet": 229.7855800790294
+      }
+    },
+    {
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "B": {
+        "share": 0.29144345238095365,
+        "outlet": 224.2200000000007
+      },
+      "C": {
+        "share": 0.49389136904762077,
+        "outlet": 156.95400000000058
+      },
+      "D": {
+        "share": 0.7321793898809567,
+        "outlet": 76.90746000000019
+      },
+      "J": {
+        "share": 0.729429895154111,
+        "outlet": 199.54149915827676
+      }
+    },
+    {
+      "rate": 0.3,
+      "wetlandCap": 1.25,
+      "B": {
+        "share": 0.29144345238095365,
+        "outlet": 224.2200000000007
+      },
+      "C": {
+        "share": 0.49389136904762077,
+        "outlet": 156.95400000000058
+      },
+      "D": {
+        "share": 0.7321793898809567,
+        "outlet": 76.90746000000019
+      },
+      "J": {
+        "share": 0.7368910714285676,
+        "outlet": 193.55490000000074
+      }
+    },
+    {
+      "rate": 0.35,
+      "wetlandCap": 0.75,
+      "B": {
+        "share": 0.34001736111111275,
+        "outlet": 208.20428571428684
+      },
+      "C": {
+        "share": 0.5593359374999979,
+        "outlet": 135.33278571428608
+      },
+      "D": {
+        "share": 0.7920245117187482,
+        "outlet": 57.178101964285844
+      },
+      "J": {
+        "share": 0.7300861324597392,
+        "outlet": 197.8899565547872
+      }
+    },
+    {
+      "rate": 0.35,
+      "wetlandCap": 1,
+      "B": {
+        "share": 0.34001736111111275,
+        "outlet": 208.20428571428684
+      },
+      "C": {
+        "share": 0.5593359374999979,
+        "outlet": 135.33278571428608
+      },
+      "D": {
+        "share": 0.7920245117187482,
+        "outlet": 57.178101964285844
+      },
+      "J": {
+        "share": 0.7773717211739143,
+        "outlet": 159.6176632628764
+      }
+    },
+    {
+      "rate": 0.35,
+      "wetlandCap": 1.25,
+      "B": {
+        "share": 0.34001736111111275,
+        "outlet": 208.20428571428684
+      },
+      "C": {
+        "share": 0.5593359374999979,
+        "outlet": 135.33278571428608
+      },
+      "D": {
+        "share": 0.7920245117187482,
+        "outlet": 57.178101964285844
+      },
+      "J": {
+        "share": 0.7963767139284641,
+        "outlet": 144.49037407651878
+      }
+    }
+  ],
+  "treatmentSweep": [
+    {
+      "treatmentCap": 1,
+      "E": {
+        "treatedShare": 0.6944444444444453,
+        "utilization": 144.00000000000003,
+        "overload": 0.4400000000000004
+      },
+      "F": {
+        "treatedShare": 1,
+        "utilization": 72.00000000000001,
+        "overload": 0
+      },
+      "H": {
+        "treatedShare": 0.27777777777777657,
+        "utilization": 360.0000000000002,
+        "overload": 2.6000000000000023
+      },
+      "I": {
+        "treatedShare": 0.5555555555555531,
+        "utilization": 180.0000000000001,
+        "overload": 1.6000000000000023
+      }
+    },
+    {
+      "treatmentCap": 1.2,
+      "E": {
+        "treatedShare": 0.8333333333333306,
+        "utilization": 120.00000000000004,
+        "overload": 0.24000000000000044
+      },
+      "F": {
+        "treatedShare": 1,
+        "utilization": 60.00000000000002,
+        "overload": 0
+      },
+      "H": {
+        "treatedShare": 0.3333333333333304,
+        "utilization": 300.0000000000002,
+        "overload": 2.400000000000003
+      },
+      "I": {
+        "treatedShare": 0.6666666666666607,
+        "utilization": 150.0000000000001,
+        "overload": 1.2000000000000028
+      }
+    },
+    {
+      "treatmentCap": 1.25,
+      "E": {
+        "treatedShare": 0.8680555555555567,
+        "utilization": 115.20000000000003,
+        "overload": 0.1900000000000004
+      },
+      "F": {
+        "treatedShare": 1,
+        "utilization": 57.600000000000016,
+        "overload": 0
+      },
+      "H": {
+        "treatedShare": 0.3472222222222207,
+        "utilization": 288.00000000000017,
+        "overload": 2.3500000000000023
+      },
+      "I": {
+        "treatedShare": 0.6944444444444414,
+        "utilization": 144.00000000000009,
+        "overload": 1.1000000000000023
+      }
+    },
+    {
+      "treatmentCap": 1.4,
+      "E": {
+        "treatedShare": 0.9722222222222218,
+        "utilization": 102.85714285714289,
+        "overload": 0.04000000000000048
+      },
+      "F": {
+        "treatedShare": 1,
+        "utilization": 51.428571428571445,
+        "overload": 0
+      },
+      "H": {
+        "treatedShare": 0.38888888888888656,
+        "utilization": 257.14285714285734,
+        "overload": 2.2000000000000024
+      },
+      "I": {
+        "treatedShare": 0.7777777777777731,
+        "utilization": 128.57142857142867,
+        "overload": 0.8000000000000025
+      }
+    },
+    {
+      "treatmentCap": 1.6,
+      "E": {
+        "treatedShare": 1,
+        "utilization": 90.00000000000003,
+        "overload": 0
+      },
+      "F": {
+        "treatedShare": 1,
+        "utilization": 45.000000000000014,
+        "overload": 0
+      },
+      "H": {
+        "treatedShare": 0.4444444444444438,
+        "utilization": 225.00000000000014,
+        "overload": 2.000000000000002
+      },
+      "I": {
+        "treatedShare": 0.8888888888888876,
+        "utilization": 112.50000000000007,
+        "overload": 0.40000000000000213
+      }
+    }
+  ],
+  "densityProbe": [
+    {
+      "case": "density",
+      "industry": 10,
+      "wetlandCount": 0,
+      "plantCount": 1,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": null,
+      "maxUtilizationPercent": 96.00000000000001,
+      "maxOverloadPerStep": 0,
+      "cumulativeOverload": 0,
+      "maxWaterError": 3.076593202422373e-9,
+      "maxPollutionError": 0,
+      "peakConcentration": 0,
+      "worstQuality": "良好",
+      "pollutionGenerated": 287.9999999999987,
+      "pollutionTreated": 287.9999999999987,
+      "pollutionPurifiedByWetland": 0,
+      "pollutionDischarged": 0,
+      "outletPollutionMass": 0,
+      "finalRiverPollution": 0,
+      "finalQuality": "良好",
+      "finalOutletConcentration": 0,
+      "treatmentShare": 1,
+      "wetlandShare": 0,
+      "actualCapacityUtilizationPercent": 95.99999999999956,
+      "wetlands": [],
+      "plants": [
+        {
+          "id": 113,
+          "treated": 287.9999999999987,
+          "firstOverload": null,
+          "maxRequested": 1.2000000000000002,
+          "maxUtilizationPercent": 96.00000000000001,
+          "maxOverload": 0
+        }
+      ],
+      "reuseProduced": 100.8000000000002,
+      "reuseConsumed": 100.3800000000002
+    },
+    {
+      "case": "density",
+      "industry": 12,
+      "wetlandCount": 0,
+      "plantCount": 1,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": 0.5,
+      "maxUtilizationPercent": 115.20000000000003,
+      "maxOverloadPerStep": 0.1900000000000004,
+      "cumulativeOverload": 45.600000000000016,
+      "maxWaterError": 3.0515820981236175e-9,
+      "maxPollutionError": 4.5208281562736374e-13,
+      "peakConcentration": 0.07295020796465837,
+      "worstQuality": "污染",
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 300,
+      "pollutionPurifiedByWetland": 0,
+      "pollutionDischarged": 45.600000000000016,
+      "outletPollutionMass": 42.26369047619049,
+      "finalRiverPollution": 3.33630952380953,
+      "finalQuality": "受壓",
+      "finalOutletConcentration": 0.007214420954992165,
+      "treatmentShare": 0.8680555555555567,
+      "wetlandShare": 0,
+      "actualCapacityUtilizationPercent": 100,
+      "wetlands": [],
+      "plants": [
+        {
+          "id": 113,
+          "treated": 300,
+          "firstOverload": 0.5,
+          "maxRequested": 1.4400000000000004,
+          "maxUtilizationPercent": 115.20000000000003,
+          "maxOverload": 0.1900000000000004
+        }
+      ],
+      "reuseProduced": 104.99999999999999,
+      "reuseConsumed": 104.56249999999999
+    },
+    {
+      "case": "density",
+      "industry": 15,
+      "wetlandCount": 0,
+      "plantCount": 1,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": 0.5,
+      "maxUtilizationPercent": 144.00000000000006,
+      "maxOverloadPerStep": 0.5500000000000007,
+      "cumulativeOverload": 131.99999999999963,
+      "maxWaterError": 3.049308361369185e-9,
+      "maxPollutionError": 1.779909553079051e-12,
+      "peakConcentration": 0.1634462662218713,
+      "worstQuality": "污染",
+      "pollutionGenerated": 432.00000000000176,
+      "pollutionTreated": 300,
+      "pollutionPurifiedByWetland": 0,
+      "pollutionDischarged": 131.99999999999963,
+      "outletPollutionMass": 122.50595238095235,
+      "finalRiverPollution": 9.494047619047631,
+      "finalQuality": "污染",
+      "finalOutletConcentration": 0.020596792073885997,
+      "treatmentShare": 0.6944444444444416,
+      "wetlandShare": 0,
+      "actualCapacityUtilizationPercent": 100,
+      "wetlands": [],
+      "plants": [
+        {
+          "id": 113,
+          "treated": 300,
+          "firstOverload": 0.5,
+          "maxRequested": 1.8000000000000007,
+          "maxUtilizationPercent": 144.00000000000006,
+          "maxOverload": 0.5500000000000007
+        }
+      ],
+      "reuseProduced": 104.99999999999999,
+      "reuseConsumed": 104.56249999999999
+    },
+    {
+      "case": "density",
+      "industry": 30,
+      "wetlandCount": 0,
+      "plantCount": 1,
+      "rate": 0.3,
+      "wetlandCap": 1,
+      "treatmentCap": 1.25,
+      "firstOverload": 0.5,
+      "maxUtilizationPercent": 288.00000000000017,
+      "maxOverloadPerStep": 2.3500000000000023,
+      "cumulativeOverload": 564.000000000003,
+      "maxWaterError": 3.0106548365438357e-9,
+      "maxPollutionError": 1.7408297026122455e-12,
+      "peakConcentration": 0.3278669973949595,
+      "worstQuality": "嚴重污染",
+      "pollutionGenerated": 864.0000000000038,
+      "pollutionTreated": 300,
+      "pollutionPurifiedByWetland": 0,
+      "pollutionDischarged": 564.000000000003,
+      "outletPollutionMass": 526.2321428571449,
+      "finalRiverPollution": 37.767857142857075,
+      "finalQuality": "嚴重污染",
+      "finalOutletConcentration": 0.0823426684316125,
+      "treatmentShare": 0.3472222222222207,
+      "wetlandShare": 0,
+      "actualCapacityUtilizationPercent": 100,
+      "wetlands": [],
+      "plants": [
+        {
+          "id": 113,
+          "treated": 300,
+          "firstOverload": 0.5,
+          "maxRequested": 3.6000000000000023,
+          "maxUtilizationPercent": 288.00000000000017,
+          "maxOverload": 2.3500000000000023
+        }
+      ],
+      "reuseProduced": 104.99999999999999,
+      "reuseConsumed": 104.56249999999999
+    }
+  ]
+}

@@ -1,0 +1,1334 @@
+[
+  {
+    "case": "CITY-A",
+    "mode": "normal",
+    "durationSeconds": 120,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 0
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 0
+      },
+      "missing": [
+        "jobs",
+        "publicService",
+        "leisure"
+      ],
+      "complete": false,
+      "status": "嚴重失能"
+    },
+    "counts": {
+      "residential": 12
+    },
+    "used": 12,
+    "free": 78,
+    "landPercent": 13.333333333333334,
+    "demandPerStep": 0.9599999999999999,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 1202.4554856314712,
+    "maxFlooding": 17,
+    "maxWaterError": 3.612512955442071e-9,
+    "maxPollutionError": 3.446132268436486e-13,
+    "worstQuality": "污染",
+    "pollutionGenerated": 115.20000000000023,
+    "outletPollution": 106.77142719507181,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 0
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 0
+      },
+      "missing": [
+        "jobs",
+        "publicService",
+        "leisure"
+      ],
+      "complete": false,
+      "status": "嚴重失能"
+    }
+  },
+  {
+    "case": "CITY-A",
+    "mode": "wet",
+    "durationSeconds": 240,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 0
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 0
+      },
+      "missing": [
+        "jobs",
+        "publicService",
+        "leisure"
+      ],
+      "complete": false,
+      "status": "嚴重失能"
+    },
+    "counts": {
+      "residential": 12
+    },
+    "used": 12,
+    "free": 78,
+    "landPercent": 13.333333333333334,
+    "demandPerStep": 0.9599999999999999,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 1734.0459033125203,
+    "maxFlooding": 85,
+    "maxWaterError": 3.712420948431827e-8,
+    "maxPollutionError": 2.0659030042224913e-12,
+    "worstQuality": "嚴重污染",
+    "pollutionGenerated": 230.39999999999816,
+    "outletPollution": 221.9714285714288,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 0
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 0
+      },
+      "missing": [
+        "jobs",
+        "publicService",
+        "leisure"
+      ],
+      "complete": false,
+      "status": "嚴重失能"
+    }
+  },
+  {
+    "case": "CITY-A",
+    "mode": "dry",
+    "durationSeconds": 240,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 0
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 0
+      },
+      "missing": [
+        "jobs",
+        "publicService",
+        "leisure"
+      ],
+      "complete": false,
+      "status": "嚴重失能"
+    },
+    "counts": {
+      "residential": 12
+    },
+    "used": 12,
+    "free": 78,
+    "landPercent": 13.333333333333334,
+    "demandPerStep": 0.9599999999999999,
+    "firstShortage": 71.5,
+    "maxShortage": 1,
+    "infiltrated": 0,
+    "maxFlooding": 0,
+    "maxWaterError": 9.256382327293977e-10,
+    "maxPollutionError": 9.919176591210999e-12,
+    "worstQuality": "嚴重污染",
+    "pollutionGenerated": 230.39999999999816,
+    "outletPollution": 68.16367904032852,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 0
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 0
+      },
+      "missing": [
+        "jobs",
+        "publicService",
+        "leisure"
+      ],
+      "complete": false,
+      "status": "嚴重失能"
+    }
+  },
+  {
+    "case": "CITY-B",
+    "mode": "normal",
+    "durationSeconds": 120,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    },
+    "counts": {
+      "residential": 12,
+      "commercial": 12,
+      "publicService": 4,
+      "park": 3
+    },
+    "used": 31,
+    "free": 59,
+    "landPercent": 34.44444444444444,
+    "demandPerStep": 2.2400000000000007,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 964.5334971241224,
+    "maxFlooding": 19,
+    "maxWaterError": 3.6386609281180426e-9,
+    "maxPollutionError": 3.517186542012496e-13,
+    "worstQuality": "污染",
+    "pollutionGenerated": 268.80000000000075,
+    "outletPollution": 250.65705206040965,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    }
+  },
+  {
+    "case": "CITY-B",
+    "mode": "wet",
+    "durationSeconds": 240,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    },
+    "counts": {
+      "residential": 12,
+      "commercial": 12,
+      "publicService": 4,
+      "park": 3
+    },
+    "used": 31,
+    "free": 59,
+    "landPercent": 34.44444444444444,
+    "demandPerStep": 2.2400000000000007,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 1382.9301063517778,
+    "maxFlooding": 87,
+    "maxWaterError": 3.771492629311979e-8,
+    "maxPollutionError": 7.318590178329032e-13,
+    "worstQuality": "嚴重污染",
+    "pollutionGenerated": 537.6000000000018,
+    "outletPollution": 519.4571428571439,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    }
+  },
+  {
+    "case": "CITY-B",
+    "mode": "dry",
+    "durationSeconds": 240,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    },
+    "counts": {
+      "residential": 12,
+      "commercial": 12,
+      "publicService": 4,
+      "park": 3
+    },
+    "used": 31,
+    "free": 59,
+    "landPercent": 34.44444444444444,
+    "demandPerStep": 2.2400000000000007,
+    "firstShortage": 68.5,
+    "maxShortage": 1,
+    "infiltrated": 0,
+    "maxFlooding": 0,
+    "maxWaterError": 1.2348664313321933e-9,
+    "maxPollutionError": 2.086153472191654e-11,
+    "worstQuality": "嚴重污染",
+    "pollutionGenerated": 537.6000000000018,
+    "outletPollution": 159.68408289389575,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    }
+  },
+  {
+    "case": "CITY-C",
+    "mode": "normal",
+    "durationSeconds": 120,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    },
+    "counts": {
+      "residential": 12,
+      "industrial": 6,
+      "publicService": 4,
+      "park": 3
+    },
+    "used": 25,
+    "free": 65,
+    "landPercent": 27.77777777777778,
+    "demandPerStep": 2.0000000000000004,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 1057.030072941928,
+    "maxFlooding": 17,
+    "maxWaterError": 3.62229002348613e-9,
+    "maxPollutionError": 1.4246381851990009e-12,
+    "worstQuality": "嚴重污染",
+    "pollutionGenerated": 326.4000000000019,
+    "outletPollution": 303.97138441782425,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    }
+  },
+  {
+    "case": "CITY-C",
+    "mode": "wet",
+    "durationSeconds": 240,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    },
+    "counts": {
+      "residential": 12,
+      "industrial": 6,
+      "publicService": 4,
+      "park": 3
+    },
+    "used": 25,
+    "free": 65,
+    "landPercent": 27.77777777777778,
+    "demandPerStep": 2.0000000000000004,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 1516.3182527604342,
+    "maxFlooding": 87,
+    "maxWaterError": 3.757236299861688e-8,
+    "maxPollutionError": 3.0588864774472313e-12,
+    "worstQuality": "嚴重污染",
+    "pollutionGenerated": 652.8000000000052,
+    "outletPollution": 630.3714285714292,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    }
+  },
+  {
+    "case": "CITY-C",
+    "mode": "dry",
+    "durationSeconds": 240,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    },
+    "counts": {
+      "residential": 12,
+      "industrial": 6,
+      "publicService": 4,
+      "park": 3
+    },
+    "used": 25,
+    "free": 65,
+    "landPercent": 27.77777777777778,
+    "demandPerStep": 2.0000000000000004,
+    "firstShortage": 69,
+    "maxShortage": 1,
+    "infiltrated": 0,
+    "maxFlooding": 0,
+    "maxWaterError": 1.1298197932774201e-9,
+    "maxPollutionError": 9.43600753089413e-12,
+    "worstQuality": "嚴重污染",
+    "pollutionGenerated": 652.8000000000052,
+    "outletPollution": 194.148979417822,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    }
+  },
+  {
+    "case": "CITY-D",
+    "mode": "normal",
+    "durationSeconds": 120,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    },
+    "counts": {
+      "residential": 12,
+      "agriculture": 12,
+      "publicService": 4,
+      "park": 3
+    },
+    "used": 31,
+    "free": 59,
+    "landPercent": 34.44444444444444,
+    "demandPerStep": 3.680000000000001,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 1184.4688367869296,
+    "maxFlooding": 20,
+    "maxWaterError": 3.6200162867316976e-9,
+    "maxPollutionError": 1.5027978861326119e-12,
+    "worstQuality": "嚴重污染",
+    "pollutionGenerated": 384.0000000000012,
+    "outletPollution": 358.4281525329554,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    }
+  },
+  {
+    "case": "CITY-D",
+    "mode": "wet",
+    "durationSeconds": 240,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    },
+    "counts": {
+      "residential": 12,
+      "agriculture": 12,
+      "publicService": 4,
+      "park": 3
+    },
+    "used": 31,
+    "free": 59,
+    "landPercent": 34.44444444444444,
+    "demandPerStep": 3.680000000000001,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 1668.0501063517706,
+    "maxFlooding": 87,
+    "maxWaterError": 3.770537659875117e-8,
+    "maxPollutionError": 5.8690829973784275e-12,
+    "worstQuality": "嚴重污染",
+    "pollutionGenerated": 768.0000000000066,
+    "outletPollution": 742.4285714285709,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    }
+  },
+  {
+    "case": "CITY-D",
+    "mode": "dry",
+    "durationSeconds": 240,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    },
+    "counts": {
+      "residential": 12,
+      "agriculture": 12,
+      "publicService": 4,
+      "park": 3
+    },
+    "used": 31,
+    "free": 59,
+    "landPercent": 34.44444444444444,
+    "demandPerStep": 3.680000000000001,
+    "firstShortage": 64.5,
+    "maxShortage": 1,
+    "infiltrated": 0,
+    "maxFlooding": 0,
+    "maxWaterError": 1.8328591977478936e-9,
+    "maxPollutionError": 1.5120349416974932e-11,
+    "worstQuality": "嚴重污染",
+    "pollutionGenerated": 768.0000000000066,
+    "outletPollution": 227.7033870082462,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    }
+  },
+  {
+    "case": "CITY-E",
+    "mode": "normal",
+    "durationSeconds": 120,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    },
+    "counts": {
+      "residential": 12,
+      "commercial": 12,
+      "publicService": 4,
+      "park": 3
+    },
+    "used": 31,
+    "free": 59,
+    "landPercent": 34.44444444444444,
+    "demandPerStep": 2.2400000000000007,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 964.5334971241224,
+    "maxFlooding": 19,
+    "maxWaterError": 3.6386609281180426e-9,
+    "maxPollutionError": 3.517186542012496e-13,
+    "worstQuality": "污染",
+    "pollutionGenerated": 268.80000000000075,
+    "outletPollution": 250.65705206040965,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    }
+  },
+  {
+    "case": "CITY-E",
+    "mode": "wet",
+    "durationSeconds": 240,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    },
+    "counts": {
+      "residential": 12,
+      "commercial": 12,
+      "publicService": 4,
+      "park": 3
+    },
+    "used": 31,
+    "free": 59,
+    "landPercent": 34.44444444444444,
+    "demandPerStep": 2.2400000000000007,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 1382.9301063517778,
+    "maxFlooding": 87,
+    "maxWaterError": 3.771492629311979e-8,
+    "maxPollutionError": 7.318590178329032e-13,
+    "worstQuality": "嚴重污染",
+    "pollutionGenerated": 537.6000000000018,
+    "outletPollution": 519.4571428571439,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    }
+  },
+  {
+    "case": "CITY-E",
+    "mode": "dry",
+    "durationSeconds": 240,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    },
+    "counts": {
+      "residential": 12,
+      "commercial": 12,
+      "publicService": 4,
+      "park": 3
+    },
+    "used": 31,
+    "free": 59,
+    "landPercent": 34.44444444444444,
+    "demandPerStep": 2.2400000000000007,
+    "firstShortage": 68.5,
+    "maxShortage": 1,
+    "infiltrated": 0,
+    "maxFlooding": 0,
+    "maxWaterError": 1.2348664313321933e-9,
+    "maxPollutionError": 2.086153472191654e-11,
+    "worstQuality": "嚴重污染",
+    "pollutionGenerated": 537.6000000000018,
+    "outletPollution": 159.68408289389575,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "ratios": {
+        "housing": 1,
+        "jobs": 1,
+        "publicService": 1,
+        "leisure": 1
+      },
+      "missing": [],
+      "complete": true,
+      "status": "良好"
+    }
+  },
+  {
+    "case": "CITY-F",
+    "mode": "normal",
+    "durationSeconds": 120,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 0,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 6
+      },
+      "ratios": {
+        "housing": 0,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 1
+      },
+      "missing": [
+        "housing",
+        "jobs",
+        "publicService"
+      ],
+      "complete": false,
+      "status": "嚴重失能"
+    },
+    "counts": {
+      "forest": 18,
+      "wetland": 6,
+      "reservoir": 6
+    },
+    "used": 30,
+    "free": 60,
+    "landPercent": 33.33333333333333,
+    "demandPerStep": 0,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 1350.1023339958545,
+    "maxFlooding": 15,
+    "maxWaterError": 3.512695911922492e-9,
+    "maxPollutionError": 0,
+    "worstQuality": "良好",
+    "pollutionGenerated": 0,
+    "outletPollution": 0,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 0,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 6
+      },
+      "ratios": {
+        "housing": 0,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 1
+      },
+      "missing": [
+        "housing",
+        "jobs",
+        "publicService"
+      ],
+      "complete": false,
+      "status": "嚴重失能"
+    }
+  },
+  {
+    "case": "CITY-F",
+    "mode": "wet",
+    "durationSeconds": 240,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 0,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 6
+      },
+      "ratios": {
+        "housing": 0,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 1
+      },
+      "missing": [
+        "housing",
+        "jobs",
+        "publicService"
+      ],
+      "complete": false,
+      "status": "嚴重失能"
+    },
+    "counts": {
+      "forest": 18,
+      "wetland": 6,
+      "reservoir": 6
+    },
+    "used": 30,
+    "free": 60,
+    "landPercent": 33.33333333333333,
+    "demandPerStep": 0,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 1894.9496104951975,
+    "maxFlooding": 83,
+    "maxWaterError": 3.623404154495802e-8,
+    "maxPollutionError": 0,
+    "worstQuality": "良好",
+    "pollutionGenerated": 0,
+    "outletPollution": 0,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 0,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 6
+      },
+      "ratios": {
+        "housing": 0,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 1
+      },
+      "missing": [
+        "housing",
+        "jobs",
+        "publicService"
+      ],
+      "complete": false,
+      "status": "嚴重失能"
+    }
+  },
+  {
+    "case": "CITY-F",
+    "mode": "dry",
+    "durationSeconds": 240,
+    "city": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 0,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 6
+      },
+      "ratios": {
+        "housing": 0,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 1
+      },
+      "missing": [
+        "housing",
+        "jobs",
+        "publicService"
+      ],
+      "complete": false,
+      "status": "嚴重失能"
+    },
+    "counts": {
+      "forest": 18,
+      "wetland": 6,
+      "reservoir": 6
+    },
+    "used": 30,
+    "free": 60,
+    "landPercent": 33.33333333333333,
+    "demandPerStep": 0,
+    "firstShortage": null,
+    "maxShortage": 0,
+    "infiltrated": 0,
+    "maxFlooding": 0,
+    "maxWaterError": 1.041598807205446e-9,
+    "maxPollutionError": 0,
+    "worstQuality": "良好",
+    "pollutionGenerated": 0,
+    "outletPollution": 0,
+    "finalCity": {
+      "targetHouseholds": 12,
+      "needs": {
+        "housing": 12,
+        "jobs": 12,
+        "publicService": 4,
+        "leisure": 3
+      },
+      "provided": {
+        "housing": 0,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 6
+      },
+      "ratios": {
+        "housing": 0,
+        "jobs": 0,
+        "publicService": 0,
+        "leisure": 1
+      },
+      "missing": [
+        "housing",
+        "jobs",
+        "publicService"
+      ],
+      "complete": false,
+      "status": "嚴重失能"
+    }
+  }
+]
