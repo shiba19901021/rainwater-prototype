@@ -1,0 +1,8 @@
+{
+  "firstShortage": 76,
+  "recovered": 100.5,
+  "firstFloodAfterRecovery": 125.5,
+  "maxFlood": 56,
+  "maxWaterError": 2.367187335039489e-9,
+  "maxPollutionError": 9.691802915767767e-12
+}

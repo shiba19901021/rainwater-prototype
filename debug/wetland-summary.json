@@ -1,0 +1,442 @@
+{
+  "cases": {
+    "A": {
+      "case": "WET-A",
+      "industrialCount": 12,
+      "rate": 0.25,
+      "cap": 0.75,
+      "detention": 13,
+      "peakConcentration": 0.47337025682501577,
+      "peakDownstreamConcentration": 0.06734377611061534,
+      "maxWaterError": 3.0515820981236175e-9,
+      "maxPollutionError": 1.9539925233402755e-13,
+      "maxHarmfulFlood": 0,
+      "maxStorage": 0,
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 0,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 320.31428571428546,
+      "finalRiverPollution": 25.285714285714302,
+      "finalDownstreamConcentration": 0.053857700702451626,
+      "quality": "嚴重污染",
+      "wetlandShare": 0,
+      "treatmentShare": 0,
+      "wetlands": []
+    },
+    "B": {
+      "case": "WET-B",
+      "industrialCount": 12,
+      "rate": 0.25,
+      "cap": 0.75,
+      "detention": 13,
+      "peakConcentration": 0.47337025682501577,
+      "peakDownstreamConcentration": 0.05254719206794732,
+      "maxWaterError": 3.0515820981236175e-9,
+      "maxPollutionError": 1.6200374375330284e-12,
+      "maxHarmfulFlood": 0,
+      "maxStorage": 13,
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 83.9357142857142,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 240.23571428571555,
+      "finalRiverPollution": 21.428571428571445,
+      "finalDownstreamConcentration": 0.040393275526838725,
+      "quality": "嚴重污染",
+      "wetlandShare": 0.2428695436507937,
+      "treatmentShare": 0,
+      "wetlands": [
+        {
+          "id": 53,
+          "last": 0.36000000000000026,
+          "total": 83.9357142857142,
+          "storage": 13
+        }
+      ]
+    },
+    "C": {
+      "case": "WET-C",
+      "industrialCount": 12,
+      "rate": 0.25,
+      "cap": 0.75,
+      "detention": 13,
+      "peakConcentration": 0.47337025682501577,
+      "peakDownstreamConcentration": 0.040830559613958484,
+      "maxWaterError": 3.0624960345448926e-9,
+      "maxPollutionError": 1.1795009413617663e-12,
+      "maxHarmfulFlood": 0,
+      "maxStorage": 26,
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 145.92321428571464,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 180.1767857142861,
+      "finalRiverPollution": 19.500000000000014,
+      "finalDownstreamConcentration": 0.03029495595231492,
+      "quality": "嚴重污染",
+      "wetlandShare": 0.42223152281746185,
+      "treatmentShare": 0,
+      "wetlands": [
+        {
+          "id": 53,
+          "last": 0.36000000000000026,
+          "total": 83.9357142857142,
+          "storage": 13
+        },
+        {
+          "id": 77,
+          "last": 0.2700000000000002,
+          "total": 61.98750000000033,
+          "storage": 13
+        }
+      ]
+    },
+    "D": {
+      "case": "WET-D",
+      "industrialCount": 12,
+      "rate": 0.25,
+      "cap": 0.75,
+      "detention": 13,
+      "peakConcentration": 0,
+      "peakDownstreamConcentration": 0,
+      "maxWaterError": 3.0279352358775213e-9,
+      "maxPollutionError": 0,
+      "maxHarmfulFlood": 0,
+      "maxStorage": 0,
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 345.59999999999957,
+      "pollutionPurifiedByWetland": 0,
+      "pollutionDischarged": 0,
+      "outletPollutionMass": 0,
+      "finalRiverPollution": 0,
+      "finalDownstreamConcentration": 0,
+      "quality": "良好",
+      "wetlandShare": 0,
+      "treatmentShare": 1,
+      "wetlands": []
+    },
+    "E": {
+      "case": "WET-E",
+      "industrialCount": 12,
+      "rate": 0.25,
+      "cap": 0.75,
+      "detention": 13,
+      "peakConcentration": 0,
+      "peakDownstreamConcentration": 0,
+      "maxWaterError": 3.0406681617023423e-9,
+      "maxPollutionError": 0,
+      "maxHarmfulFlood": 0,
+      "maxStorage": 13,
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 345.59999999999957,
+      "pollutionPurifiedByWetland": 0,
+      "pollutionDischarged": 0,
+      "outletPollutionMass": 0,
+      "finalRiverPollution": 0,
+      "finalDownstreamConcentration": 0,
+      "quality": "良好",
+      "wetlandShare": 0,
+      "treatmentShare": 1,
+      "wetlands": [
+        {
+          "id": 53,
+          "last": 0,
+          "total": 0,
+          "storage": 13
+        }
+      ]
+    }
+  },
+  "prior": {
+    "B": {
+      "case": "WET-B",
+      "industrialCount": 12,
+      "rate": null,
+      "cap": 2,
+      "detention": 9,
+      "peakConcentration": 0.47337025682501577,
+      "peakDownstreamConcentration": 0,
+      "maxWaterError": 3.0515820981236175e-9,
+      "maxPollutionError": 1.0125233984581428e-13,
+      "maxHarmfulFlood": 0,
+      "maxStorage": 9,
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 335.7428571428568,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 0,
+      "finalRiverPollution": 9.857142857142863,
+      "finalDownstreamConcentration": 0,
+      "quality": "嚴重污染",
+      "wetlandShare": 0.9714781746031748,
+      "treatmentShare": 0,
+      "wetlands": [
+        {
+          "id": 53,
+          "last": 1.440000000000001,
+          "storage": 9
+        }
+      ]
+    },
+    "C": {
+      "case": "WET-C",
+      "industrialCount": 12,
+      "rate": null,
+      "cap": 2,
+      "detention": 9,
+      "peakConcentration": 0.47337025682501577,
+      "peakDownstreamConcentration": 0,
+      "maxWaterError": 3.0624960345448926e-9,
+      "maxPollutionError": 1.0125233984581428e-13,
+      "maxHarmfulFlood": 0,
+      "maxStorage": 18,
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 335.7428571428568,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 0,
+      "finalRiverPollution": 9.857142857142863,
+      "finalDownstreamConcentration": 0,
+      "quality": "嚴重污染",
+      "wetlandShare": 0.9714781746031748,
+      "treatmentShare": 0,
+      "wetlands": [
+        {
+          "id": 53,
+          "last": 1.440000000000001,
+          "storage": 9
+        },
+        {
+          "id": 77,
+          "last": 0,
+          "storage": 9
+        }
+      ]
+    }
+  },
+  "sweep": [
+    {
+      "rate": 0.2,
+      "cap": 0.5,
+      "oneShare": 0.1942956349206341,
+      "twoShare": 0.3473511904761909,
+      "stressShare": 0.13656046761244384,
+      "stressOutflow": 693.5117559828512
+    },
+    {
+      "rate": 0.2,
+      "cap": 0.75,
+      "oneShare": 0.1942956349206341,
+      "twoShare": 0.3473511904761909,
+      "stressShare": 0.19553571428571326,
+      "stressOutflow": 644.9142857142851
+    },
+    {
+      "rate": 0.2,
+      "cap": 1,
+      "oneShare": 0.1942956349206341,
+      "twoShare": 0.3473511904761909,
+      "stressShare": 0.19553571428571326,
+      "stressOutflow": 644.9142857142851
+    },
+    {
+      "rate": 0.25,
+      "cap": 0.5,
+      "oneShare": 0.2428695436507937,
+      "twoShare": 0.42223152281746185,
+      "stressShare": 0.13681351792592533,
+      "stressOutflow": 693.2931205120033
+    },
+    {
+      "rate": 0.25,
+      "cap": 0.75,
+      "oneShare": 0.2428695436507937,
+      "twoShare": 0.42223152281746185,
+      "stressShare": 0.2044219994997182,
+      "stressOutflow": 637.5579638608172
+    },
+    {
+      "rate": 0.25,
+      "cap": 1,
+      "oneShare": 0.2428695436507937,
+      "twoShare": 0.42223152281746185,
+      "stressShare": 0.24441964285714288,
+      "stressOutflow": 604.6071428571431
+    },
+    {
+      "rate": 0.3,
+      "cap": 0.5,
+      "oneShare": 0.29144345238095365,
+      "twoShare": 0.4923288690476209,
+      "stressShare": 0.13697714743703643,
+      "stressOutflow": 693.1517446144032
+    },
+    {
+      "rate": 0.3,
+      "cap": 0.75,
+      "oneShare": 0.29144345238095365,
+      "twoShare": 0.4923288690476209,
+      "stressShare": 0.20484070141866578,
+      "stressOutflow": 637.1962054028464
+    },
+    {
+      "rate": 0.3,
+      "cap": 1,
+      "oneShare": 0.29144345238095365,
+      "twoShare": 0.4923288690476209,
+      "stressShare": 0.2721105335605036,
+      "stressOutflow": 581.7536418608695
+    }
+  ],
+  "detentionSweep": [
+    {
+      "case": "WET-C",
+      "industrialCount": 12,
+      "rate": 0.25,
+      "cap": 0.75,
+      "detention": 9,
+      "peakConcentration": 0.27192638336371117,
+      "peakDownstreamConcentration": 0.013645986482855192,
+      "maxWaterError": 4.0754457586444914e-9,
+      "maxPollutionError": 6.110667527536862e-13,
+      "maxHarmfulFlood": 67,
+      "maxStorage": 18,
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 141.27953263690895,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 169.66303829867175,
+      "finalRiverPollution": 34.65742906441946,
+      "finalDownstreamConcentration": 0.013645986482855192,
+      "quality": "污染",
+      "wetlandShare": 0.408794943972538,
+      "treatmentShare": 0,
+      "wetlands": [
+        {
+          "id": 53,
+          "last": 0.3580619167610189,
+          "total": 82.07248533244375,
+          "storage": 9
+        },
+        {
+          "id": 77,
+          "last": 0.2682839814805847,
+          "total": 59.207047304465284,
+          "storage": 9
+        }
+      ]
+    },
+    {
+      "case": "WET-C",
+      "industrialCount": 12,
+      "rate": 0.25,
+      "cap": 0.75,
+      "detention": 12,
+      "peakConcentration": 0.27192638336371117,
+      "peakDownstreamConcentration": 0.01364582112168227,
+      "maxWaterError": 4.0627128328196704e-9,
+      "maxPollutionError": 9.521272659185342e-13,
+      "maxHarmfulFlood": 67,
+      "maxStorage": 24,
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 141.27966626989326,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 169.66332619502575,
+      "finalRiverPollution": 34.657007535081505,
+      "finalDownstreamConcentration": 0.01364582112168227,
+      "quality": "污染",
+      "wetlandShare": 0.40879533064205276,
+      "treatmentShare": 0,
+      "wetlands": [
+        {
+          "id": 53,
+          "last": 0.35805966495940644,
+          "total": 82.07255123943125,
+          "storage": 12
+        },
+        {
+          "id": 77,
+          "last": 0.2682816401108165,
+          "total": 59.20711503046176,
+          "storage": 12
+        }
+      ]
+    },
+    {
+      "case": "WET-C",
+      "industrialCount": 12,
+      "rate": 0.25,
+      "cap": 0.75,
+      "detention": 13,
+      "peakConcentration": 0.27192638336371117,
+      "peakDownstreamConcentration": 0.013645757947125602,
+      "maxWaterError": 4.0627128328196704e-9,
+      "maxPollutionError": 7.815970093361102e-13,
+      "maxHarmfulFlood": 67,
+      "maxStorage": 26,
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 141.27971732005224,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 169.66343617844134,
+      "finalRiverPollution": 34.65684650150675,
+      "finalDownstreamConcentration": 0.013645757947125602,
+      "quality": "污染",
+      "wetlandShare": 0.40879547835663316,
+      "treatmentShare": 0,
+      "wetlands": [
+        {
+          "id": 53,
+          "last": 0.3580588047168194,
+          "total": 82.07257641694946,
+          "storage": 13
+        },
+        {
+          "id": 77,
+          "last": 0.2682807456349809,
+          "total": 59.20714090310268,
+          "storage": 13
+        }
+      ]
+    },
+    {
+      "case": "WET-C",
+      "industrialCount": 12,
+      "rate": 0.25,
+      "cap": 0.75,
+      "detention": 14,
+      "peakConcentration": 0.27192638336371117,
+      "peakDownstreamConcentration": 0.013645691785312943,
+      "maxWaterError": 4.0627128328196704e-9,
+      "maxPollutionError": 7.034373084024992e-13,
+      "maxHarmfulFlood": 67,
+      "maxStorage": 28,
+      "pollutionGenerated": 345.59999999999957,
+      "pollutionTreated": 0,
+      "pollutionPurifiedByWetland": 141.2797707823988,
+      "pollutionDischarged": 345.59999999999957,
+      "outletPollutionMass": 169.66355135986032,
+      "finalRiverPollution": 34.65667785774115,
+      "finalDownstreamConcentration": 0.013645691785312943,
+      "quality": "污染",
+      "wetlandShare": 0.408795633050923,
+      "treatmentShare": 0,
+      "wetlands": [
+        {
+          "id": 53,
+          "last": 0.3580579038179692,
+          "total": 82.07260278407061,
+          "storage": 14
+        },
+        {
+          "id": 77,
+          "last": 0.2682798088754591,
+          "total": 59.20716799832805,
+          "storage": 14
+        }
+      ]
+    }
+  ]
+}
