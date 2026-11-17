@@ -294,3 +294,29 @@ details p { font-size: var(--text-body); }
   #lab .exhibit-toolbar { flex-direction: column; align-items: stretch; }
   #lab .readout { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* flat redraw */
+.drawing{background:#f6f3ea}
+.pipe-edge{stroke:#64748b}.pipe-face{stroke:#d5dde7}
+.fitting{fill:#e2e8f0;stroke:#475569;stroke-width:2}
+.barrel{fill:#1e293b;stroke:#0f172a;stroke-width:3}
+.barrel-seam{fill:none;stroke:#334155;stroke-width:3;opacity:1}
+.tank-lid{fill:#0f172a;stroke:#334155;stroke-width:3}
+.tank-label{font:800 28px "Noto Sans TC","Microsoft JhengHei",sans-serif;fill:#cbd5e1}
+.tap{stroke:#64748b}
+.water-solid{stroke:#38bdf8}
+.water-stream{stroke:#0284c7}.water-front{stroke:#0284c7}
+.diagram-rain{stroke:#38bdf8}
+.crest-guide{stroke:#0284c7;stroke-width:2;stroke-dasharray:6 6}
+.crest-guide text{fill:#0284c7;font:700 17px "Noto Sans TC","Microsoft JhengHei",sans-serif}
+.drawing-notes{font:16px "Noto Sans TC","Microsoft JhengHei",sans-serif;fill:#64748b}
+.hidden-route{stroke:#64748b}
+.device.lit .pipe-edge,.device.lit .barrel{stroke:#0f172a}
+.tap-spout,.tap-stem,.tap-handle{stroke:#64748b}
+.tap-mouth{fill:#475569}
+.device.lit .pipe-face{stroke:#7dd3fc}
+.device.lit .fitting,.device.lit .barrel{fill:#0284c7}
+.device.lit .tap,.device.lit .tap-spout,.device.lit .tap-stem,.device.lit .tap-handle{stroke:#0284c7}
+.leader{stroke:#0f172a}
+.callout rect{fill:#fff;stroke:#cbd5e1}
+.callout-name{fill:#0f172a}.callout-brief{fill:#475569}
