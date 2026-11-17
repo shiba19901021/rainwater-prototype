@@ -30,7 +30,7 @@ const story=[
 let storyIndex=0;
 story.forEach((s,i)=>{const b=document.createElement('button');b.textContent=s.label;b.onclick=()=>showStory(i);$('story-steps').append(b)});
 function showStory(i){storyIndex=Math.max(0,Math.min(story.length-1,i));const s=story[storyIndex];$('story-kicker').textContent='現場觀察 ／ '+s.label;$('story-title').textContent=s.title;$('story-body').textContent=s.body;$('story-question').textContent=s.question;$('story-caption').textContent=s.caption;$('story-count').textContent=`${storyIndex+1} / ${story.length}`;$('story-prev').disabled=storyIndex===0;$('story-next').disabled=storyIndex===story.length-1;$('story-next').textContent=storyIndex===4?'看看後來的設計 →':'下一步 →';
- const image=$('story-image');image.src=s.complete?'photos/system.jpeg':'photos/courtyard-before.png';image.alt=s.complete?'完成後的嘉北國小雨水收集設備':'施工前全景：'+s.caption;image.parentElement.classList.toggle('annotating',!s.complete);$('story-highlight').setAttribute('d',s.path||'');$('story-water').style.visibility=s.water?'visible':'hidden';
+ const image=$('story-image');image.src=s.complete?'photos/system.jpeg':'photos/courtyard-before.jpg';image.alt=s.complete?'完成後的嘉北國小雨水收集設備':'施工前全景：'+s.caption;image.parentElement.classList.toggle('annotating',!s.complete);$('story-highlight').setAttribute('d',s.path||'');$('story-water').style.visibility=s.water?'visible':'hidden';
  Array.from($('story-steps').children).forEach((b,j)=>{if(j===storyIndex)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current')});
 }
 $('story-prev').onclick=()=>showStory(storyIndex-1);$('story-next').onclick=()=>showStory(storyIndex+1);showStory(0);
