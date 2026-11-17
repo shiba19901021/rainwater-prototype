@@ -320,3 +320,4 @@ details p { font-size: var(--text-body); }
 .leader{stroke:#0f172a}
 .callout rect{fill:#fff;stroke:#cbd5e1}
 .callout-name{fill:#0f172a}.callout-brief{fill:#475569}
+.site-context{opacity:1;stroke:none}
